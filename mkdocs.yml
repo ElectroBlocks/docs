@@ -1,0 +1,11 @@
+site_name: ElectroBlocks
+nav:
+  - Home: index.md
+  - What is an Arduino?: what-is-an-arduino.md
+  - Blink: blink.md
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages: ["css", "javascript", "html"]
+extra_css:
+  - css/style.css

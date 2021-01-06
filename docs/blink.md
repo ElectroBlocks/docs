@@ -2,4 +2,4 @@
 
 ## Objective
 
-To learn how to upload
+How to write and basic program to control leds and how to uplaod that code to the Arduino.

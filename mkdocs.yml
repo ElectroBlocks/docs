@@ -5,7 +5,5 @@ nav:
   - Blink: blink.md
 theme:
   name: readthedocs
-  highlightjs: true
-  hljs_languages: ["css", "javascript", "html"]
 extra_css:
   - css/style.css

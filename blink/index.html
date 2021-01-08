@@ -27,9 +27,6 @@
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/html.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -63,6 +60,42 @@
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Blink</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#objective">Objective</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kit">Kit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#components">Components</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#led">Led</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resistor">Resistor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#breadboard">Breadboard</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#wiring-the-first-led">Wiring the first led</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#setting-up-chrome">Setting up chrome</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#uploading-the-code">Uploading the code</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coding-blink">Coding Blink</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#wiring-the-second-led">Wiring the second led</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#challenge-make-both-leds-blink-at-the-same-time">Challenge make both leds blink at the same time.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#challenge-make-leds-in-an-alternate-pattern">Challenge make leds in an alternate pattern</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#review">Review</a>
     </li>
     </ul>
                     </li>
@@ -99,9 +132,102 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="how-to-make-an-arduino-blink">How to make an Arduino Blink</h1>
+                <h1 id="lesson-2-blink">Lesson 2 - Blink</h1>
 <h2 id="objective">Objective</h2>
 <p>How to write and basic program to control leds and how to uplaod that code to the Arduino.</p>
+<h2 id="kit">Kit</h2>
+<p><img alt="kit" src="/assets/blink/kit.jpg" /></p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<ul>
+<li>1 x Arduino with cable</li>
+<li>1 x Breadboard</li>
+<li>2 x leds</li>
+<li>2 x resistors (100 - 200 ohms)</li>
+<li>2 x led wires</li>
+</ul>
+<h2 id="project">Project</h2>
+<video controls>
+  <source src="/assets/blink/final-project.mp4" type="video/mp4">
+</video>
+
+<h2 id="components">Components</h2>
+<h3 id="led">Led</h3>
+<p>The led stands for light emitting diode. The important thing to note are the wires connected to it. The long wire is positive and the short wire is negative. When you pass electricity through it, it will emit light.</p>
+<p><img alt="Led" src="/assets/blink/led.jpg" /></p>
+<h3 id="resistor">Resistor</h3>
+<p>The resistor is used to decrease the amount of electrons flowing through the wire. The strength of the resistor is marked by the colored bands. You can use the <a href="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/">calculator</a> to learn more.</p>
+<p><img alt="Resistor" src="/assets/blink/resistor.jpg" /></p>
+<h3 id="breadboard">Breadboard</h3>
+<p>The breadboard is used to create / prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that are plugged into it. See the picture below. The green lines represent how which pins share electricity. In the middle of the board pins connectted up and down share electricity. On the side of the board pins are connected side to side.</p>
+<p><img alt="Resistor" src="/assets/blink/breadboard.jpg" /></p>
+<h2 id="steps">Steps</h2>
+<h3 id="wiring-the-first-led">Wiring the first led</h3>
+<p>I don't follow the circuit picture exactly. You can if you want. Just remember the principles of the breadboard.</p>
+<p>1. Connect the long end of the led into hole (25, E) and the short into (28, E).</p>
+<p><img alt="step 1" src="/assets/blink/wiring-first-led/step1.jpg" /></p>
+<p>2. Connect a jumper wire from (28, A) to the ground - line of the breadboard.</p>
+<p><img alt="step 2" src="/assets/blink/wiring-first-led/step2.jpg" /></p>
+<p>3. Connect a resistor from (25, D) to (25, B).</p>
+<p><img alt="step 3" src="/assets/blink/wiring-first-led/step3.jpg" /></p>
+<p>4. Connect a jumper wire from from ground of the breadboard to ground (gnd) of the Arduino.</p>
+<p><img alt="step 4" src="/assets/blink/wiring-first-led/step4.jpg" /></p>
+<p>5. Connect a jumper wire from (25, a) to pin 7 on the Arduino.</p>
+<p><img alt="step 5" src="/assets/blink/wiring-first-led/step5.jpg" /></p>
+<h3 id="setting-up-chrome">Setting up chrome</h3>
+<p>1. Go to chrome://flags in your chrome browser</p>
+<p><img alt="chrome flags" src="/assets/blink/setting-up-chrome/chrome-flags.png" /></p>
+<p>2. In the search bar type in 'Experimental Web Platform features'</p>
+<p><img alt="search " src="/assets/blink/setting-up-chrome/search.png" /></p>
+<p>3. Enable the feature and click the relaunch button at the bottom of your screen.</p>
+<p><img alt="relaunch chrome " src="/assets/blink/setting-up-chrome/relaunch.png" /></p>
+<h3 id="uploading-the-code">Uploading the code</h3>
+<p>1. Go to <a href="https://electroblocks.org">electroblocks.org</a></p>
+<p>2. Drag and led block into the loop block. Set it use pin 7.</p>
+<video controls>
+  <source src="/assets/blink/uploading-code/step2.mp4" type="video/mp4">
+</video>
+
+<p>3. Upload the code the Arduino.</p>
+<video controls>
+  <source src="/assets/blink/uploading-code/step3.mp4" type="video/mp4">
+</video>
+
+<h3 id="coding-blink">Coding Blink</h3>
+<p>Note code is execute from top to bottom meaning that the blocks at the top of the loop will run before the bottom ones run.</p>
+<video controls>
+  <source src="/assets/blink/coding-blink.mp4" type="video/mp4">
+</video>
+
+<video controls>
+  <source src="/assets/blink/led-blink.mp4" type="video/mp4">
+</video>
+
+<h3 id="wiring-the-second-led">Wiring the second led</h3>
+<p>1. Connect the long end of the led into hole (17, E) and the short into (20, E).</p>
+<p><img alt="step 1" src="/assets/blink/wiring-second-led/step1.jpg" /></p>
+<p>2. Connect a jumper wire from (20, A) to the ground - line of the breadboard.</p>
+<p><img alt="step 2" src="/assets/blink/wiring-second-led/step2.jpg" /></p>
+<p>3. Connect a resistor from (17, D) to (17, B).</p>
+<p><img alt="step 3" src="/assets/blink/wiring-second-led/step3.jpg" /></p>
+<p>4. Connect a jumper wire from (20, a) to pin 5 on the Arduino.</p>
+<p><img alt="step 4" src="/assets/blink/wiring-first-led/step4.jpg" /></p>
+<h2 id="challenge-make-both-leds-blink-at-the-same-time">Challenge make both leds blink at the same time.</h2>
+<video controls>
+  <source src="/assets/blink/double-blink.mp4" type="video/mp4">
+</video>
+
+<h2 id="challenge-make-leds-in-an-alternate-pattern">Challenge make leds in an alternate pattern</h2>
+<video controls>
+  <source src="/assets/blink/final-project.mp4" type="video/mp4">
+</video>
+
+<h2 id="review">Review</h2>
+<ul>
+<li>What is an led?</li>
+<li>What is the first block that gets executed?</li>
+<li>What does the delay block do?</li>
+<li>Why build</li>
+</ul>
               
             </div>
           </div>

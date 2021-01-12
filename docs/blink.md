@@ -42,6 +42,18 @@ The breadboard is used to create / prototype electronic projects without gluing 
 
 ![Resistor](assets/blink/breadboard.jpg)
 
+## Code
+
+There are two main blocks of code you need to know about when programming the Arduino. The setup block and the loop block. The loop block will run over and over again. The setup block will only run once. The way it works the blocks at the top of the loop or setup block will execute first.
+
+![example code](/assets/blink/code_view.png)
+
+The example above the send message block would run first then the wait block.
+
+### Loop Block
+
+Notice the loop block has (runs x times) in it. That is how many times it will run on the virtual circuit. In the actual Arduino it runs forever.
+
 ## Steps
 
 ### Wiring the first led

@@ -77,6 +77,12 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code">Code</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#loop-block">Loop Block</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#wiring-the-first-led">Wiring the first led</a>
@@ -160,6 +166,12 @@
 <h3 id="breadboard">Breadboard</h3>
 <p>The breadboard is used to create / prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that are plugged into it. See the picture below. The green lines represent how which pins share electricity. In the middle of the board pins connectted up and down share electricity. On the side of the board pins are connected side to side.</p>
 <p><img alt="Resistor" src="../assets/blink/breadboard.jpg" /></p>
+<h2 id="code">Code</h2>
+<p>There are two main blocks of code you need to know about when programming the Arduino. The setup block and the loop block. The loop block will run over and over again. The setup block will only run once. The way it works the blocks at the top of the loop or setup block will execute first.</p>
+<p><img alt="example code" src="/assets/blink/code_view.png" /></p>
+<p>The example above the send message block would run first then the wait block.</p>
+<h3 id="loop-block">Loop Block</h3>
+<p>Notice the loop block has (runs x times) in it. That is how many times it will run on the virtual circuit. In the actual Arduino it runs forever.</p>
 <h2 id="steps">Steps</h2>
 <h3 id="wiring-the-first-led">Wiring the first led</h3>
 <p>I don't follow the circuit picture exactly. You can if you want. Just remember the principles of the breadboard.</p>

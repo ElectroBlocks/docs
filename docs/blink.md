@@ -36,7 +36,7 @@ The resistor is used to decrease the amount of electrons flowing through the wir
 
 ![Resistor](assets/blink/resistor.jpg)
 
-### Breadboard
+### Bre adboard
 
 The breadboard is used to create / prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that are plugged into it. See the picture below. The green lines represent how which pins share electricity. In the middle of the board pins connectted up and down share electricity. On the side of the board pins are connected side to side.
 

@@ -1,4 +1,4 @@
-# Lesson 2 - Blink
+# Blink
 
 ## Objective
 

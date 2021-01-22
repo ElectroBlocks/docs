@@ -1,4 +1,4 @@
-# Lesson 3 - Servos
+# Servos
 
 ## Objective
 

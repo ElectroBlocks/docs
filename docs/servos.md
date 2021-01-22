@@ -9,7 +9,10 @@ To learn how to use a servo and buttons by building fun projects.
 - Arduino Uno x 1
 - Servo x 1
 - Push Button x 1
-- Jump Wires x 3
+- Jump Wires x 10
+- Posterboard
+- Popsicle Stick
+- Tape
 
 ## What is a servo
 

@@ -43,6 +43,12 @@ This is used to create your own blocks. You can put blocks inside the create blo
 
 ![create blocks](assets/servos/create-block.png)
 
+## Loop Block
+
+A loop block will run the blocks inside it a certain number of times.
+
+![loop block](assets/servos/loopblock.png)
+
 ## What is a variable?
 
 A variable is how the computer stores information that can change. The information that it stores is called it's value. The way you get value that a variable stores is by using the get variable block and it's name. A variable also as a type of data that it stores. In Electroblocks there are 4 types:
@@ -131,3 +137,47 @@ A variable is how the computer stores information that can change. The informati
 <video controls>
   <source src="../assets/servos/highfive.mp4" type="video/mp4">
 </video>
+
+## Steps For Wave
+
+1\. Undo the tape and make plastic piece lay flat with the popsicle stick.
+
+![step 1](assets/servos/stepwave1.jpg)
+
+2\. Tape it up
+
+![step 2](assets/servos/stepwave2.jpg)
+
+![step 3](assets/servos/stepwave3.jpg)
+
+## Coding The Wave
+
+<video controls>
+  <source src="../assets/servos/coding-the-wave.mp4" type="video/mp4">
+</video>
+
+<video controls>
+  <source src="../assets/servos/wave.mp4" type="video/mp4">
+</video>
+
+## How to create a wave block
+
+<video controls>
+  <source src="../assets/servos/wave-block-code.mp4" type="video/mp4">
+</video>
+
+## Challenge
+
+Using the wave block you created. Write code that will make a wave when the button is pressed.
+
+<video controls>
+  <source src="../assets/servos/wave-btn.mp4" type="video/mp4">
+</video>
+
+## Review
+
+- What is a variable?
+- What is a servo?
+- What is a push button?
+- How do you create a custom block?
+- What kinds of projects would you like to build with this?

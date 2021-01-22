@@ -72,7 +72,7 @@ I don't follow the circuit picture exactly. You can if you want. Just remember t
 
 ![step 3](assets/blink/wiring-first-led/step3.jpg)
 
-4\. Connect a jumper wire from from ground of the breadboard to ground (gnd) of the Arduino.
+4\. Connect a jumper wire from ground of the breadboard to ground (gnd) of the Arduino.
 
 ![step 4](assets/blink/wiring-first-led/step4.jpg)
 

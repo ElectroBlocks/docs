@@ -3,7 +3,7 @@ nav:
   - Home: index.md
   - What is an Arduino?: what-is-an-arduino.md
   - Blink: blink.md
-  - Variables: variables.md
+  - Messages: messages.md
   - Servos: servos.md
 theme:
   name: readthedocs

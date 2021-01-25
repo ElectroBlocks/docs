@@ -10,6 +10,7 @@ To learn how to use a servo and buttons by building fun projects.
 - Servo x 1
 - Push Button x 1
 - Jump Wires x 10
+- breadboard x 1
 - Posterboard
 - Popsicle Stick
 - Tape
@@ -17,7 +18,7 @@ To learn how to use a servo and buttons by building fun projects.
 ## What is a servo
 
 <video controls>
-  <source src="../assets/servos/servo-demo.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/servos/servo-demo.mp4" type="video/mp4">
 </video>
 
 A servo is a motor that allows you to control the exact rotation. You do this by telling the Arduino how many degrees to rotate it.
@@ -134,11 +135,11 @@ A variable is how the computer stores information that can change. The informati
 ## Coding High Five Machine
 
 <video controls>
-  <source src="../assets/servos/coding-high-five.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/servos/coding-high-five.mp4" type="video/mp4">
 </video>
 
 <video controls>
-  <source src="../assets/servos/highfive.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/servos/highfive.mp4" type="video/mp4">
 </video>
 
 ## Steps For Wave
@@ -156,17 +157,17 @@ A variable is how the computer stores information that can change. The informati
 ## Coding The Wave
 
 <video controls>
-  <source src="../assets/servos/coding-the-wave.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/servos/coding-the-wave.mp4" type="video/mp4">
 </video>
 
 <video controls>
-  <source src="../assets/servos/wave.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/servos/wave.mp4" type="video/mp4">
 </video>
 
 ## How to create a wave block
 
 <video controls>
-  <source src="../assets/servos/wave-block-code.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/servos/wave-block-code.mp4" type="video/mp4">
 </video>
 
 ## Challenge
@@ -174,7 +175,7 @@ A variable is how the computer stores information that can change. The informati
 Using the wave block you created. Write code that will make a wave when the button is pressed.
 
 <video controls>
-  <source src="../assets/servos/wave-btn.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/servos/wave-btn.mp4" type="video/mp4">
 </video>
 
 ## Review

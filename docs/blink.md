@@ -19,7 +19,7 @@ How to write and basic program to control leds and how to uplaod that code to th
 ## Project
 
 <video controls>
-  <source src="../assets/blink/final-project.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/final-project.mp4" type="video/mp4">
 </video>
 
 ## Components
@@ -101,13 +101,13 @@ I don't follow the circuit picture exactly. You can if you want. Just remember t
 2\. Drag and led block into the loop block. Set it use pin 7.
 
 <video controls>
-  <source src="../assets/blink/uploading-code/step2.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/uploading-code/step2.mp4" type="video/mp4">
 </video>
 
 3\. Upload the code the Arduino.
 
 <video controls>
-  <source src="../assets/blink/uploading-code/step3.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/uploading-code/step3.mp4" type="video/mp4">
 </video>
 
 ### Coding Blink
@@ -115,11 +115,11 @@ I don't follow the circuit picture exactly. You can if you want. Just remember t
 Note code is execute from top to bottom meaning that the blocks at the top of the loop will run before the bottom ones run.
 
 <video controls>
-  <source src="../assets/blink/coding-blink.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/coding-blink.mp4" type="video/mp4">
 </video>
 
 <video controls>
-  <source src="../assets/blink/led-blink.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/led-blink.mp4" type="video/mp4">
 </video>
 
 ### Wiring the second led
@@ -143,13 +143,13 @@ Note code is execute from top to bottom meaning that the blocks at the top of th
 ## Challenge make both leds blink at the same time.
 
 <video controls>
-  <source src="../assets/blink/double-blink.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/double-blink.mp4" type="video/mp4">
 </video>
 
 ## Challenge make leds in an alternate pattern
 
 <video controls>
-  <source src="../assets/blink/final-project.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/final-project.mp4" type="video/mp4">
 </video>
 
 ## Review

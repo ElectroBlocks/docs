@@ -5,6 +5,7 @@ nav:
   - Blink: blink.md
   - Messages: messages.md
   - Servos: servos.md
+  - RGB LED: rgbled.md
 theme:
   name: readthedocs
 extra_css:

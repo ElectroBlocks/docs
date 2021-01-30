@@ -2,11 +2,11 @@
 
 ## Objective
 
-To learn all the parts of an Arduino and how to upload code.
+To learn what an Arduino is and some of the parts of an Arduino?
 
 ## Kit
 
-![Project](assets/what-is-an-arduino/project.jpg)
+![Project](assets/what-is-an-arduino/kit.jpg)
 
 ## Bill of Materials
 
@@ -14,13 +14,13 @@ To learn all the parts of an Arduino and how to upload code.
 
 ## What is an Arduino?
 
-The Arduino is a cheap real time computer that costs around 7 dollars. Real time means that will execute your code really fast. It can do this because there is no operating system running on the Arduino. The only thing it's doing is running your code. :)
+An Arduino is a type of computers. The main advantage of Arduino is that they make it easy to build electronic projects. Arduino come in many shapes and sizes. In the course we'll mainly be using the Arduino Uno.
 
-![Arduino](assets/what-is-an-arduino/arduino.jpg)
+![Arduino](assets/what-is-an-arduino/what-is-an-arduino.jpg)
 
 ### What are pins?
 
-Pins are the pieces of metal that stick out of the Arduino. They are covered with plastic.
+Pins are the pieces of metal that stick out of the Arduino. They are covered with plastic. With code you can make a pin an input pin or an output pin. Input pins detect whether electricity is running through them. Output in turn on and off electricity. Input pins are often used for sensor, while output pins are often used to control electrical components like leds, motors, and LCD screens.
 
 ![Arduino](assets/what-is-an-arduino/arduino-pins.jpg)
 
@@ -32,9 +32,9 @@ Pins are the pieces of metal that stick out of the Arduino. They are covered wit
 
 ### What are the RX and TX leds and pins?
 
-They pins that are used to receive and transmit messages to and from the Arduino. Whenever a message is being sent from the Arduino the TX LED lights up. Whenever a message is being received the RX led lights up.
+These pins that are used to receive and transmit messages to and from the Arduino. Whenever a message is being sent from the Arduino the TX LED lights up. Whenever a message is being received the RX led lights up.
 
-![Arduino](assets/what-is-an-arduino/arduino-rx-tx.jpg)
+![Arduino](assets/what-is-an-arduino/arduino-tx-rx.jpg)
 
 ### Reset Button (reloads the program)
 
@@ -46,4 +46,4 @@ This will restart the Arduino with the code that is already on it.
 
 This led is built into the Arduino. It will light up when pin 13 is turned on.
 
-![Arduino](assets/what-is-an-arduino/internal-led-on.jpg)
+![Arduino](assets/what-is-an-arduino/led.jpg)

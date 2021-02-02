@@ -19,7 +19,7 @@ How to write and basic program to control leds and how to uplaod that code to th
 ## Project
 
 <video controls>
-  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/final-project.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/blink-project.mp4" type="video/mp4">
 </video>
 
 ## Components
@@ -36,11 +36,15 @@ The resistor is used to decrease the amount of electrons flowing through the wir
 
 ![Resistor](assets/blink/resistor.jpg)
 
-### Bre adboard
+### Breadboard
 
 The breadboard is used to create / prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that are plugged into it. See the picture below. The green lines represent how which pins share electricity. In the middle of the board pins connectted up and down share electricity. On the side of the board pins are connected side to side.
 
-![Resistor](assets/blink/breadboard.jpg)
+![breadboard](assets/blink/breadboard.jpg)
+
+<video controls>
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/breadboard-electroblocks.mp4" type="video/mp4">
+</video>
 
 ## Code
 
@@ -58,87 +62,59 @@ Notice the loop block has (runs x times) in it. That is how many times it will r
 
 ### Wiring the first led
 
-I don't follow the circuit picture exactly. You can if you want. Just remember the principles of the breadboard.
-
-1\. Connect the long end of the led into hole (25, E) and the short into (28, E).
+1\. Insert the led positive (long) end of the led into (27, E) and the short (-) end into (25, E).
 
 ![step 1](assets/blink/wiring-first-led/step1.jpg)
 
-2\. Connect a jumper wire from (28, A) to the ground - line of the breadboard.
+2\. Connect a resistor from (27, D) to (27, B).
 
 ![step 2](assets/blink/wiring-first-led/step2.jpg)
 
-3\. Connect a resistor from (25, D) to (25, B).
+3\. Connect a wire from - of the breadboard to (25, A).
 
 ![step 3](assets/blink/wiring-first-led/step3.jpg)
 
-4\. Connect a jumper wire from ground of the breadboard to ground (gnd) of the Arduino.
+4\. Connect a wire from (27, A) to pin 7 on the Arduino.
 
 ![step 4](assets/blink/wiring-first-led/step4.jpg)
 
-5\. Connect a jumper wire from (25, a) to pin 7 on the Arduino.
+5\. Connect a wire from - of the breadboard to GND of the Arduino.
 
 ![step 5](assets/blink/wiring-first-led/step5.jpg)
 
-### Setting up chrome
+### Uploading Test Code
 
-1\. Go to chrome://flags in your chrome browser
+It takes about 10 seconds to upload code on the real Arduino. I editted it out of the videos.
 
-![chrome flags](assets/blink/setting-up-chrome/chrome-flags.png)
-
-2\. In the search bar type in 'Experimental Web Platform features'
-
-![search ](assets/blink/setting-up-chrome/search.png)
-
-3\. Enable the feature and click the relaunch button at the bottom of your screen.
-
-![relaunch chrome ](assets/blink/setting-up-chrome/relaunch.png)
-
-### Uploading the code
-
-1\. Go to [electroblocks.org](https://electroblocks.org)
-
-2\. Drag and led block into the loop block. Set it use pin 7.
+Go to [electroblocks.org](https://electroblocks.org)
 
 <video controls>
-  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/uploading-code/step2.mp4" type="video/mp4">
-</video>
-
-3\. Upload the code the Arduino.
-
-<video controls>
-  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/uploading-code/step3.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/upload-test-code.mp4" type="video/mp4">
 </video>
 
 ### Coding Blink
-
-Note code is execute from top to bottom meaning that the blocks at the top of the loop will run before the bottom ones run.
 
 <video controls>
   <source src="https://storage.googleapis.com/electroblocks-lessons/blink/coding-blink.mp4" type="video/mp4">
 </video>
 
-<video controls>
-  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/led-blink.mp4" type="video/mp4">
-</video>
-
 ### Wiring the second led
 
-1\. Connect the long end of the led into hole (17, E) and the short into (20, E).
+1\. Connect the long end of the led into hole (37, E) and the short into (36, E).
 
 ![step 1](assets/blink/wiring-second-led/step1.jpg)
 
-2\. Connect a jumper wire from (20, A) to the ground - line of the breadboard.
+2\. Connect a wire from (36, A) to the ground - line of the breadboard.
 
 ![step 2](assets/blink/wiring-second-led/step2.jpg)
 
-3\. Connect a resistor from (17, D) to (17, B).
+3\. Connect a resistor from (37, D) to (37, B).
 
 ![step 3](assets/blink/wiring-second-led/step3.jpg)
 
-4\. Connect a jumper wire from (20, a) to pin 5 on the Arduino.
+4\. Connect a wire from (37, A) to pin 5 on the Arduino.
 
-![step 4](assets/blink/wiring-first-led/step4.jpg)
+![step 4](assets/blink/wiring-second-led/step4.jpg)
 
 ## Challenge make both leds blink at the same time.
 
@@ -149,7 +125,7 @@ Note code is execute from top to bottom meaning that the blocks at the top of th
 ## Challenge make leds in an alternate pattern
 
 <video controls>
-  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/final-project.mp4" type="video/mp4">
+  <source src="https://storage.googleapis.com/electroblocks-lessons/blink/alt-blink.mp4" type="video/mp4">
 </video>
 
 ## Review

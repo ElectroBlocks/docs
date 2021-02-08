@@ -6,7 +6,7 @@ To learn what an Arduino is and some of the parts of an Arduino?
 
 ## Kit
 
-![Project](assets/what-is-an-arduino/kit.jpg)
+![Project](../assets/what-is-an-arduino/kit.jpg)
 
 ## Bill of Materials
 
@@ -16,34 +16,34 @@ To learn what an Arduino is and some of the parts of an Arduino?
 
 An Arduino is a type of computers. The main advantage of Arduino is that they make it easy to build electronic projects. Arduino come in many shapes and sizes. In the course we'll mainly be using the Arduino Uno.
 
-![Arduino](assets/what-is-an-arduino/what-is-an-arduino.jpg)
+![Arduino](../assets/what-is-an-arduino/what-is-an-arduino.jpg)
 
 ### What are pins?
 
 Pins are the pieces of metal that stick out of the Arduino. They are covered with plastic. With code you can make a pin an input pin or an output pin. Input pins detect whether electricity is running through them. Output in turn on and off electricity. Input pins are often used for sensor, while output pins are often used to control electrical components like leds, motors, and LCD screens.
 
-![Arduino](assets/what-is-an-arduino/arduino-pins.jpg)
+![Arduino](../assets/what-is-an-arduino/arduino-pins.jpg)
 
-![Arduino](assets/what-is-an-arduino/arduino-pins-without-cover.jpg)
+![Arduino](../assets/what-is-an-arduino/arduino-pins-without-cover.jpg)
 
 ### Where is the Arduino's brain?
 
-![Arduino](assets/what-is-an-arduino/arduino.jpg)
+![Arduino](../assets/what-is-an-arduino/arduino.jpg)
 
 ### What are the RX and TX leds and pins?
 
 These pins that are used to receive and transmit messages to and from the Arduino. Whenever a message is being sent from the Arduino the TX LED lights up. Whenever a message is being received the RX led lights up.
 
-![Arduino](assets/what-is-an-arduino/arduino-tx-rx.jpg)
+![Arduino](../assets/what-is-an-arduino/arduino-tx-rx.jpg)
 
 ### Reset Button (reloads the program)
 
 This will restart the Arduino with the code that is already on it.
 
-![Arduino](assets/what-is-an-arduino/arduino-reset-btn.jpg)
+![Arduino](../assets/what-is-an-arduino/arduino-reset-btn.jpg)
 
 ### Internal Led
 
 This led is built into the Arduino. It will light up when pin 13 is turned on.
 
-![Arduino](assets/what-is-an-arduino/led.jpg)
+![Arduino](../assets/what-is-an-arduino/led.jpg)

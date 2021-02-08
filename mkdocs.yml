@@ -1,13 +1,20 @@
 site_name: ElectroBlocks
 nav:
-  - Home: index.md
-  - What is an Arduino?: what-is-an-arduino.md
-  - Setting up Chrome: setting-up-chrome.md
-  - Blink: blink.md
-  - Messages: messages.md
-  - Servos: servos.md
-  - RGB LED: rgbled.md
-  - NeoPixels: neopixel.md
+  - Getting Started: index.md
+  - ElectroBlocks Lessons:
+      - What is Electroblocks?: lessons/what-is-electroblocks.md
+      - What is an Arduino?: lessons/what-is-an-arduino.md
+      - Setting up Chrome: lessons/setting-up-chrome.md
+      - Blink: lessons/blink.md
+      - Messages: lessons/messages.md
+      - Servos: lessons/servos.md
+      - RGB LED: lessons/rgbled.md
+      - NeoPixels: lessons/neopixel.md
+  - How Tos:
+      - Uploading Code: howto/uploading-code.md
+      - Debuging: howto/debug.md
+      - Save Project: howto/saveproject.md
+      - Open Project: howto/openproject.md
 theme:
   name: readthedocs
 extra_css:

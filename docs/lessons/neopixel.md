@@ -6,7 +6,7 @@ To learn how to control rgb led lights (neo pixels) with loops.
 
 ## Kit
 
-![kit](assets/neopixels/kit.jpg)
+![kit](../assets/neopixels/kit.jpg)
 
 ## Bill of Materials
 

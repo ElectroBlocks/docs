@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>What is an Arduino? - ElectroBlocks</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/style.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "What is an Arduino?";
+    var mkdocs_page_input_path = "lessons/what-is-an-arduino.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ElectroBlocks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Getting Started</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../what-is-electroblocks/">What is Electroblocks?</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">What is an Arduino?</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#objective">Objective</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kit">Kit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-an-arduino_1">What is an Arduino?</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-are-pins">What are pins?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#where-is-the-arduinos-brain">Where is the Arduino's brain?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-are-the-rx-and-tx-leds-and-pins">What are the RX and TX leds and pins?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reset-button-reloads-the-program">Reset Button (reloads the program)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#internal-led">Internal Led</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setting-up-chrome/">Setting up Chrome</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../messages/">Messages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../servos/">Servos</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../rgbled/">RGB LED</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../neopixel/">NeoPixels</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">How Tos</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/uploading-code/">Uploading Code</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/debug/">Debuging</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/saveproject/">Save Project</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/openproject/">Open Project</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ElectroBlocks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>ElectroBlocks Lessons &raquo;</li>
+        
+      
+    
+    <li>What is an Arduino?</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="what-is-an-arduino">What is an Arduino?</h1>
+<h2 id="objective">Objective</h2>
+<p>To learn what an Arduino is and some of the parts of an Arduino?</p>
+<h2 id="kit">Kit</h2>
+<p><img alt="Project" src="../../assets/what-is-an-arduino/kit.jpg" /></p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<ul>
+<li>1 x Arduino with cable</li>
+</ul>
+<h2 id="what-is-an-arduino_1">What is an Arduino?</h2>
+<p>An Arduino is a type of computers. The main advantage of Arduino is that they make it easy to build electronic projects. Arduino come in many shapes and sizes. In the course we'll mainly be using the Arduino Uno.</p>
+<p><img alt="Arduino" src="../../assets/what-is-an-arduino/what-is-an-arduino.jpg" /></p>
+<h3 id="what-are-pins">What are pins?</h3>
+<p>Pins are the pieces of metal that stick out of the Arduino. They are covered with plastic. With code you can make a pin an input pin or an output pin. Input pins detect whether electricity is running through them. Output in turn on and off electricity. Input pins are often used for sensor, while output pins are often used to control electrical components like leds, motors, and LCD screens.</p>
+<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-pins.jpg" /></p>
+<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-pins-without-cover.jpg" /></p>
+<h3 id="where-is-the-arduinos-brain">Where is the Arduino's brain?</h3>
+<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino.jpg" /></p>
+<h3 id="what-are-the-rx-and-tx-leds-and-pins">What are the RX and TX leds and pins?</h3>
+<p>These pins that are used to receive and transmit messages to and from the Arduino. Whenever a message is being sent from the Arduino the TX LED lights up. Whenever a message is being received the RX led lights up.</p>
+<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-tx-rx.jpg" /></p>
+<h3 id="reset-button-reloads-the-program">Reset Button (reloads the program)</h3>
+<p>This will restart the Arduino with the code that is already on it.</p>
+<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-reset-btn.jpg" /></p>
+<h3 id="internal-led">Internal Led</h3>
+<p>This led is built into the Arduino. It will light up when pin 13 is turned on.</p>
+<p><img alt="Arduino" src="../../assets/what-is-an-arduino/led.jpg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../setting-up-chrome/" class="btn btn-neutral float-right" title="Setting up Chrome">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../what-is-electroblocks/" class="btn btn-neutral" title="What is Electroblocks?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../what-is-electroblocks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../setting-up-chrome/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

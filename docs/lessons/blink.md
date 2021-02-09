@@ -14,7 +14,7 @@ How to write and basic program to control leds and how to uplaod that code to th
 - 1 x Breadboard
 - 2 x leds
 - 2 x resistors (100 - 400 ohms)
-- 2 x led wires
+- 5 x led wires
 
 ## Project
 

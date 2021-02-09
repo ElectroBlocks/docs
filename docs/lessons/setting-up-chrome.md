@@ -1,4 +1,4 @@
-## Setting up chrome
+# Setting up chrome
 
 In order to get chrome working you will need to turn on some flags. At the time of the writing it's not possible to do this with firefox.
 

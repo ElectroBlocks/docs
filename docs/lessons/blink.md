@@ -20,23 +20,31 @@ How to write and basic program to control leds and how to uplaod that code to th
 
 <iframe width="90%" height="700" src="https://www.youtube.com/embed/MvAc5SSh3qY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Video
+
+<iframe width="90%" height="700" src="https://www.youtube.com/embed/BoCXdEJlM2E?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Components
 
 ### Led
 
-The led stands for light emitting diode. The important thing to note are the wires connected to it. The long wire is positive and the short wire is negative. When you pass electricity through it, it will emit light.
+Led stands for light-emitting diode. A diode is an electronic component that allows electricity to flow one way.
+
+The important thing to note is the wires connected to it. The long wire is positive, and the short wire is negative. When you pass electricity through it, it will emit light.
 
 ![Led](../assets/blink/led.jpg)
 
 ### Resistor
 
-The resistor is used to decrease the amount of electrons flowing through the wire. The strength of the resistor is marked by the colored bands. You can use the [calculator](https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/) to learn more.
+Resistors are used to decrease the number of electrons flowing through the wire. The colored bands mark the strength of the resistor. You can use the [calculator](https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/) to learn more.
 
 ![Resistor](../assets/blink/resistor.jpg)
 
 ### Breadboard
 
-The breadboard is used to create / prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that are plugged into it. See the picture below. The green lines represent how which pins share electricity. In the middle of the board pins connectted up and down share electricity. On the side of the board pins are connected side to side.
+The breadboard is used to prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that is plugged into it.
+
+The green lines represent how which pins share electricity. In the middle of the board, pins connected up and down share electricity. On the side of the board, pins are connected side to side.
 
 ![breadboard](../assets/blink/breadboard.jpg)
 
@@ -44,15 +52,11 @@ The breadboard is used to create / prototype electronic projects without gluing 
 
 ## Code
 
-There are two main blocks of code you need to know about when programming the Arduino. The setup block and the loop block. The loop block will run over and over again. The setup block will only run once. The way it works the blocks at the top of the loop or setup block will execute first.
-
 ![example code](../assets/blink/code_view.png)
 
-The example above the send message block would run first then the wait block.
+In a real Arduino, the blocks inside the loop block will run on repeatedly until the Arduino loses power. The first blocks to run will be the ones on top.
 
-### Loop Block
-
-Notice the loop block has (runs x times) in it. That is how many times it will run on the virtual circuit. In the actual Arduino it runs forever.
+Notice the loop block has (runs x times) in it. That is how many times it will run on the virtual circuit.
 
 ## Steps
 

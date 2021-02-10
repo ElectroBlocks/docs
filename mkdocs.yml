@@ -2,7 +2,6 @@ site_name: ElectroBlocks
 nav:
   - Getting Started: index.md
   - ElectroBlocks Lessons:
-      - What is Electroblocks?: lessons/what-is-electroblocks.md
       - What is an Arduino?: lessons/what-is-an-arduino.md
       - Setting up Chrome: lessons/setting-up-chrome.md
       - Blink: lessons/blink.md

@@ -12,6 +12,10 @@ To learn what an Arduino is and some of the parts of an Arduino?
 
 - 1 x Arduino with cable
 
+## Video
+
+<iframe width="90%" height="700" src="https://www.youtube.com/embed/JN4ZxnHB62g?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## What is an Arduino?
 
 An Arduino is a type of computers. The main advantage of Arduino is that they make it easy to build electronic projects. Arduino come in many shapes and sizes. In the course we'll mainly be using the Arduino Uno.

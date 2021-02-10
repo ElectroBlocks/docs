@@ -54,8 +54,6 @@
                 </ul>
                 <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
                 <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../what-is-electroblocks/">What is Electroblocks?</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../what-is-an-arduino/">What is an Arduino?</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../setting-up-chrome/">Setting up Chrome</a>
@@ -70,6 +68,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#components">Components</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#led">Led</a>
@@ -81,10 +81,6 @@
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#code">Code</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#loop-block">Loop Block</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
         <ul>
@@ -173,29 +169,32 @@
 <li>1 x Breadboard</li>
 <li>2 x leds</li>
 <li>2 x resistors (100 - 400 ohms)</li>
-<li>2 x led wires</li>
+<li>5 x led wires</li>
 </ul>
 <h2 id="project">Project</h2>
 <iframe width="90%" height="700" src="https://www.youtube.com/embed/MvAc5SSh3qY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<h2 id="video">Video</h2>
+<iframe width="90%" height="700" src="https://www.youtube.com/embed/BoCXdEJlM2E?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2 id="components">Components</h2>
 <h3 id="led">Led</h3>
-<p>The led stands for light emitting diode. The important thing to note are the wires connected to it. The long wire is positive and the short wire is negative. When you pass electricity through it, it will emit light.</p>
+<p>Led stands for light-emitting diode. A diode is an electronic component that allows electricity to flow one way.</p>
+<p>The important thing to note is the wires connected to it. The long wire is positive, and the short wire is negative. When you pass electricity through it, it will emit light.</p>
 <p><img alt="Led" src="../../assets/blink/led.jpg" /></p>
 <h3 id="resistor">Resistor</h3>
-<p>The resistor is used to decrease the amount of electrons flowing through the wire. The strength of the resistor is marked by the colored bands. You can use the <a href="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/">calculator</a> to learn more.</p>
+<p>Resistors are used to decrease the number of electrons flowing through the wire. The colored bands mark the strength of the resistor. You can use the <a href="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/">calculator</a> to learn more.</p>
 <p><img alt="Resistor" src="../../assets/blink/resistor.jpg" /></p>
 <h3 id="breadboard">Breadboard</h3>
-<p>The breadboard is used to create / prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that are plugged into it. See the picture below. The green lines represent how which pins share electricity. In the middle of the board pins connectted up and down share electricity. On the side of the board pins are connected side to side.</p>
+<p>The breadboard is used to prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that is plugged into it.</p>
+<p>The green lines represent how which pins share electricity. In the middle of the board, pins connected up and down share electricity. On the side of the board, pins are connected side to side.</p>
 <p><img alt="breadboard" src="../../assets/blink/breadboard.jpg" /></p>
 <iframe width="90%" height="700" src="https://www.youtube.com/embed/kkb8RzGg_Ag?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="code">Code</h2>
-<p>There are two main blocks of code you need to know about when programming the Arduino. The setup block and the loop block. The loop block will run over and over again. The setup block will only run once. The way it works the blocks at the top of the loop or setup block will execute first.</p>
 <p><img alt="example code" src="../../assets/blink/code_view.png" /></p>
-<p>The example above the send message block would run first then the wait block.</p>
-<h3 id="loop-block">Loop Block</h3>
-<p>Notice the loop block has (runs x times) in it. That is how many times it will run on the virtual circuit. In the actual Arduino it runs forever.</p>
+<p>In a real Arduino, the blocks inside the loop block will run on repeatedly until the Arduino loses power. The first blocks to run will be the ones on top.</p>
+<p>Notice the loop block has (runs x times) in it. That is how many times it will run on the virtual circuit.</p>
 <h2 id="steps">Steps</h2>
 <h3 id="wiring-the-first-led">Wiring the first led</h3>
 <p>1. Insert the led positive (long) end of the led into (27, E) and the short (-) end into (25, E).</p>

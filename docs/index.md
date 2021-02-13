@@ -1,10 +1,10 @@
 # Getting Started
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/F-NO5-mIGvQ?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/F-NO5-mIGvQ?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Board Selector Block
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/LiecZECeiXg?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/LiecZECeiXg?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This block is always present. It allows you to switch between the different types of Arduinos.
 
@@ -16,7 +16,7 @@ This block will run forever on a real Arduino, but will only run 3 times through
 
 ## Building a circuit
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/SXRAHp0-yEA?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/SXRAHp0-yEA?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 As you drag blocks into the loop block the circuit starts to update.
 

@@ -20,11 +20,11 @@ This lesson requires that you build the circuit in the [blink lesson](blink.md).
 
 ## Project
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/6oPJVAH-J_I?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/6oPJVAH-J_I?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Video
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/qiU27WwjDqk?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/qiU27WwjDqk?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Message Setup Block
 
@@ -48,4 +48,4 @@ The comparison block is used to compare two values. If it's set to "=" it will c
 
 ## Coding it up
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/FN0loHPj21Y?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/FN0loHPj21Y?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

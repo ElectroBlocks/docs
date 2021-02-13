@@ -6,7 +6,8 @@ nav:
       - Setting up Chrome: lessons/setting-up-chrome.md
       - Blink: lessons/blink.md
       - Messages: lessons/messages.md
-      - Servos: lessons/servos.md
+      - HighFive: lessons/highfive.md
+      - Wave: lessons/wave.md
       - RGB LED: lessons/rgbled.md
       - NeoPixels: lessons/neopixel.md
   - How Tos:

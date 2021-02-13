@@ -18,11 +18,11 @@ How to write and basic program to control leds and how to uplaod that code to th
 
 ## Project
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/MvAc5SSh3qY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/MvAc5SSh3qY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Video
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/BoCXdEJlM2E?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/BoCXdEJlM2E?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Components
 
@@ -48,7 +48,7 @@ The green lines represent how which pins share electricity. In the middle of the
 
 ![breadboard](../assets/blink/breadboard.jpg)
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/kkb8RzGg_Ag?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/kkb8RzGg_Ag?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Code
 
@@ -88,11 +88,11 @@ It takes about 10 seconds to upload code on the real Arduino. I editted it out o
 
 Go to [electroblocks.org](https://electroblocks.org)
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/zQi7C1hIvqw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/zQi7C1hIvqw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Coding Blink
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/V3Xd82vxuoc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/V3Xd82vxuoc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Wiring the second led
 
@@ -114,11 +114,11 @@ Go to [electroblocks.org](https://electroblocks.org)
 
 ## Challenge make both leds blink at the same time.
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/joqkdb_NEbw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/joqkdb_NEbw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Challenge make the led alternate on and off
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/7byRlOOwZ1Y?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/7byRlOOwZ1Y?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Review
 

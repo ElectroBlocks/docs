@@ -1,6 +1,6 @@
 # Uploading Coding
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/IkeoqS-d7AE?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/IkeoqS-d7AE?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Warning
 

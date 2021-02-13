@@ -4,7 +4,7 @@ In order to get chrome working you will need to turn on some flags. At the time 
 
 ## Video
 
-<iframe width="90%" height="700" src="https://www.youtube.com/embed/NEgdfx_VqDE?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/NEgdfx_VqDE?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Steps
 

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>HighFive - ElectroBlocks</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/style.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HighFive";
+    var mkdocs_page_input_path = "lessons/highfive.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ElectroBlocks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Getting Started</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../what-is-an-arduino/">What is an Arduino?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setting-up-chrome/">Setting up Chrome</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../messages/">Messages</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">HighFive</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#objective">Objective</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-a-servo">What is a servo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-a-push-button-or-switch">What is a push button or switch?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#servo-block">Servo Block</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#button-setup-block">Button Setup Block</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding">Coding</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#review">Review</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../wave/">Wave</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../rgbled/">RGB LED</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../neopixel/">NeoPixels</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">How Tos</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/uploading-code/">Uploading Code</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/debug/">Debuging</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/saveproject/">Save Project</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../howto/openproject/">Open Project</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ElectroBlocks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>ElectroBlocks Lessons &raquo;</li>
+        
+      
+    
+    <li>HighFive</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="highfive">HighFive</h1>
+<h2 id="objective">Objective</h2>
+<p>To learn how to use servos to build a highfive machine.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<ul>
+<li>Arduino Uno x 1</li>
+<li>Servo x 1</li>
+<li>Push Button x 1</li>
+<li>Jump Wires x 10</li>
+<li>breadboard x 1</li>
+<li>Posterboard</li>
+<li>Popsicle Stick</li>
+<li>Tape</li>
+</ul>
+<h2 id="project">Project</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/zLBeM_52F8c?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="video">Video</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/rd7vb1UuzdA?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="what-is-a-servo">What is a servo</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/v3PI80eMfPM?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>A servo is a motor that allows you to control its exact rotation. You do this by telling the Arduino how many degrees to rotate it.</p>
+<h2 id="what-is-a-push-button-or-switch">What is a push button or switch?</h2>
+<p><img alt="push button" src="../../assets/highfive/push_button.jpg" /></p>
+<p>A push-button or switch is an electric component that turns on and off electricity.</p>
+<h2 id="servo-block">Servo Block</h2>
+<p><img alt="servo block" src="../../assets/highfive/servo_block.png" /></p>
+<p>The servo block is used to control a servo. The pin number controls which pin is connected to the Arduino. The degrees hold what position to rotate the servo to.</p>
+<h2 id="button-setup-block">Button Setup Block</h2>
+<p><img alt="push button" src="../../assets/highfive/push_button_block.png" /></p>
+<p>This block is used to tell which pin to use the for push button. Under the dashes you will be able to set when the button is pressed in the virtual circuit.</p>
+<h2 id="steps">Steps</h2>
+<p>1. Connect one wire of the push button to (25, E) and the other wire to (27, E) of the breadboard.</p>
+<p><img alt="step1" src="../../assets/highfive/step1.jpg" /></p>
+<p>2. Connect a wire from (25, A) to the - of the breadboard.</p>
+<p><img alt="step2" src="../../assets/highfive/step2.jpg" /></p>
+<p>3. Connect a wire from (27, A) to pin 7 on the Arduino.</p>
+<p><img alt="step3" src="../../assets/highfive/step3.jpg" /></p>
+<p>4. Connect a wire from the data wire (orange) of the servo to (46, E) on the breadboard.</p>
+<p><img alt="step4" src="../../assets/highfive/step4.jpg" /></p>
+<p>5. Connect a wire from the volts wire (red) of the servo to (45, E) on the breadboard.</p>
+<p><img alt="step5" src="../../assets/highfive/step5.jpg" /></p>
+<p>6. Connect a wire from the ground wire (brown) of the servo to (43, E) on the breadboard.</p>
+<p><img alt="step6" src="../../assets/highfive/step6.jpg" /></p>
+<p>7. Connect a wire from (43, A) to the - of the breadboard.</p>
+<p><img alt="step7" src="../../assets/highfive/step7.jpg" /></p>
+<p>8. Connect a wire from (45, A) to the + of the breadboard.</p>
+<p><img alt="step8" src="../../assets/highfive/step8.jpg" /></p>
+<p>9. Connect a wire from (46, A) to pin 3 on the Arduino.</p>
+<p><img alt="step9" src="../../assets/highfive/step9.jpg" /></p>
+<p>10. Connect a wire from - on the breadboard to a GND pin on the Arduino.</p>
+<p><img alt="step10" src="../../assets/highfive/step10.jpg" /></p>
+<p>11. Connect a wire from + on the breadboard to the 5v pin on the Arduino.</p>
+<p><img alt="step11" src="../../assets/highfive/step11.jpg" /></p>
+<p>12. Trace and cut your hand on a piece of posterboard.</p>
+<p><img alt="step12" src="../../assets/highfive/step12a.jpg" /></p>
+<p><img alt="step12" src="../../assets/highfive/step12b.jpg" /></p>
+<p>13. Tape the popsicle stick to your posterboard hand.</p>
+<p><img alt="step13" src="../../assets/highfive/step13.jpg" /></p>
+<p>14. Tape the popsicle stick to the piece of plastic that connects to the servo. They should create a 90 degree angle with each other.</p>
+<p><img alt="step14" src="../../assets/highfive/step14.jpg" /></p>
+<p>15. Tape the servo a table.</p>
+<p><img alt="step15" src="../../assets/highfive/step15.jpg" /></p>
+<p>16. Make sure the popsicle can rotate with the servo.</p>
+<p><img alt="step16" src="../../assets/highfive/step16.jpg" /></p>
+<h2 id="coding">Coding</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/RHAePCZokFk?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="review">Review</h2>
+<ul>
+<li>What is a servo?</li>
+<li>What are if blocks used for?</li>
+<li>What is a button or switch used for?</li>
+<li>Can you use what you learned to write code to make leds turn on and off with a button?</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../wave/" class="btn btn-neutral float-right" title="Wave">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../messages/" class="btn btn-neutral" title="Messages"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../messages/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../wave/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>What is an Arduino? - ElectroBlocks</title>
+  <title>Wave - ElectroBlocks</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "What is an Arduino?";
-    var mkdocs_page_input_path = "lessons/what-is-an-arduino.md";
+    var mkdocs_page_name = "Wave";
+    var mkdocs_page_input_path = "lessons/wave.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -54,31 +54,7 @@
                 </ul>
                 <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">What is an Arduino?</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#objective">Objective</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#kit">Kit</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-is-an-arduino_1">What is an Arduino?</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#what-are-pins">What are pins?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#where-is-the-arduinos-brain">Where is the Arduino's brain?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#what-are-the-rx-and-tx-leds-and-pins">What are the RX and TX leds and pins?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#reset-button-reloads-the-program">Reset Button (reloads the program)</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#internal-led">Internal Led</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../what-is-an-arduino/">What is an Arduino?</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../setting-up-chrome/">Setting up Chrome</a>
                     </li>
@@ -88,7 +64,25 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../wave/">Wave</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Wave</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#objective">Objective</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-a-variable">What is a variable?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding">Coding</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#challenge">Challenge</a>
+    </li>
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../rgbled/">RGB LED</a>
                     </li>
@@ -131,7 +125,7 @@
         
       
     
-    <li>What is an Arduino?</li>
+    <li>Wave</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -142,37 +136,45 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="what-is-an-arduino">What is an Arduino?</h1>
+                <h1 id="wave">Wave</h1>
 <h2 id="objective">Objective</h2>
-<p>To learn what an Arduino is and some of the parts of an Arduino?</p>
-<h2 id="kit">Kit</h2>
-<p><img alt="Project" src="../../assets/what-is-an-arduino/kit.jpg" /></p>
+<p>To learn how to build a wave machine with the servo.</p>
 <h2 id="bill-of-materials">Bill of Materials</h2>
 <ul>
-<li>1 x Arduino with cable</li>
+<li>Arduino Uno x 1</li>
+<li>Servo x 1</li>
+<li>Push Button x 1</li>
+<li>Jump Wires x 10</li>
+<li>breadboard x 1</li>
+<li>Posterboard</li>
+<li>Popsicle Stick</li>
+<li>Tape</li>
 </ul>
-<h2 id="video">Video</h2>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/r5HivrgRAIw?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="project">Project</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/vwD849lvyxg?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h2 id="what-is-an-arduino_1">What is an Arduino?</h2>
-<p>An Arduino is a type of computer. The main advantage of Arduino is that they make it easy to build electronic projects. Arduino comes in many shapes and sizes. In the course, we'll mainly be using the Arduino Uno.</p>
-<p><img alt="Arduino" src="../../assets/what-is-an-arduino/what-is-an-arduino.jpg" /></p>
-<h3 id="what-are-pins">What are pins?</h3>
-<p>Pins are the pieces of metal that stick out of the Arduino. They are covered with plastic. With code, you can make a pin an input pin or an output pin.</p>
-<p>Input pins sense whether electricity is running through the pin. Output pins turn on and off electricity. Input pins are often used for sensors, while output pins are often used to control electrical components like LEDs, motors, and LCD screens.</p>
-<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-pins.jpg" /></p>
-<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-pins-without-cover.jpg" /></p>
-<h3 id="where-is-the-arduinos-brain">Where is the Arduino's brain?</h3>
-<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino.jpg" /></p>
-<h3 id="what-are-the-rx-and-tx-leds-and-pins">What are the RX and TX leds and pins?</h3>
-<p>These pins are used to receive and transmit messages to and from the Arduino. Whenever a message is being sent from the Arduino, the TX LED lights up. Whenever a message is being received, the RX led lights up.</p>
-<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-tx-rx.jpg" /></p>
-<h3 id="reset-button-reloads-the-program">Reset Button (reloads the program)</h3>
-<p>This will restart the Arduino with the code that is already on it.</p>
-<p><img alt="Arduino" src="../../assets/what-is-an-arduino/arduino-reset-btn.jpg" /></p>
-<h3 id="internal-led">Internal Led</h3>
-<p>This led is built into the Arduino. It will light up when pin 13 is turned on.</p>
-<p><img alt="Arduino" src="../../assets/what-is-an-arduino/led.jpg" /></p>
+<h2 id="video">Video</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/IqCjfNvi-28?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="what-is-a-variable">What is a variable?</h2>
+<p>A variable is how the computer stores information that can change. The information that it stores is called its value. The way you get the value that a variable store is by using the get variable block and its name. A variable also has a type of data that it stores. In Electroblocks there are 4 types:</p>
+<ul>
+<li>Text</li>
+<li>Numbers</li>
+<li>Boolean (true or false)</li>
+<li>Color</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<p>1. Tape the popsicle stick to the piece of plastic that connects to the servo. They should be parallel with each other.</p>
+<p><img alt="step1" src="../../assets/wave/step1.jpg" /></p>
+<p>2. Reattach the plastic piece to the servo.</p>
+<p><img alt="step2" src="../../assets/wave/step2.jpg" /></p>
+<h2 id="coding">Coding</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/U-4OIAiFSXw?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="challenge">Challenge</h2>
+<p>Write code so that only when the button is pressed does the wave.</p>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/o6D0_ERKuVQ?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               
             </div>
           </div>
@@ -180,10 +182,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../setting-up-chrome/" class="btn btn-neutral float-right" title="Setting up Chrome">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../rgbled/" class="btn btn-neutral float-right" title="RGB LED">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../.." class="btn btn-neutral" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../highfive/" class="btn btn-neutral" title="HighFive"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -209,10 +211,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../highfive/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../setting-up-chrome/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../rgbled/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

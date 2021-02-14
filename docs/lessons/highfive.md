@@ -21,7 +21,7 @@ To learn how to use servos to build a highfive machine.
 
 ## Video
 
-<iframe width="535" height="450" src="https://www.youtube.com/embed/rd7vb1UuzdA?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/EU5XS95wmOY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is a servo
 

@@ -76,7 +76,35 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-is-are-neopixels-rgb-led-light-strip">What is are neopixels / rgb led light strip?</a>
+    <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-are-neopixels">What are neopixels?</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#arrows">Arrows</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#neopixel-setup-block">NeoPixel Setup Block</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#count-with-block-loop">Count With Block (loop).</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-code">Test Code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#solid-colors">Solid Colors</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rainbow-challenge">Rainbow Challenge</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#solution-video">Solution Video</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#christmas-light-pattern">Christmas Light Pattern</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#snake">Snake</a>
     </li>
     </ul>
                     </li>
@@ -136,11 +164,53 @@
 <h2 id="bill-of-materials">Bill of Materials</h2>
 <ul>
 <li>Arduino Uno x 1</li>
-<li>RGB LED Light Strip</li>
-<li>Jump Wires x 3</li>
+<li>RGB LED Light Strip x 1</li>
+<li>Wires x 3</li>
 </ul>
-<h2 id="what-is-are-neopixels-rgb-led-light-strip">What is are neopixels / rgb led light strip?</h2>
-<p>It's a bunch of rgb leds that are connected together. You can control each of the leds color using rgb. Note please buy 5 volt rgb leds that work with the Arduino.</p>
+<h2 id="project">Project</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/7PXQAPDPYwY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="video">Video</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/GvC-PFMKOVk?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="what-are-neopixels">What are neopixels?</h2>
+<p><img alt="neopixels" src="../../assets/neopixels/neopixel.png" /></p>
+<p>It's a strip of RGB LEDs that are connected. You can control each of the LEDs' color using RGB.</p>
+<h3 id="arrows">Arrows</h3>
+<p>Notice that the metal connecting neopixels are labeled. The DI pin is the pin that will tell the NeoPixels what color to change to. Notice the arrow. The Arduino will connect with the neopixel at the start of the arrows.</p>
+<p><img alt="neopixels" src="../../assets/neopixels/neopixel-arrows.jpg" /></p>
+<h2 id="neopixel-setup-block">NeoPixel Setup Block</h2>
+<p><img alt="neopixel setup block" src="../../assets/neopixels/neopixel_setupblock.png" /></p>
+<p>This block is required to set up neopixels. You set the number of LEDs in the strip, the pin used to control the LEDs, and the brightness level between 1 to 20. 20 for maximum brightness.</p>
+<h2 id="count-with-block-loop">Count With Block (loop).</h2>
+<p><img alt="neopixel setup block" src="../../assets/neopixels/forloop.png" /></p>
+<p>This block will create a number variable that will start at the "from number". In the picture, the variable's name is "i". It will increase or decrease "i" until it equals the to number. You can control the amount that the variable will change by changing the "by adding" number.</p>
+<h2 id="steps">Steps</h2>
+<p>1. Place the Arduino so the analog pins are next to the neopixel.</p>
+<p><img alt="step1" src="../../assets/neopixels/step1.jpg" /></p>
+<p>2. Connect a wire from a GND pin on the Arduino to the GND of the neopixel.</p>
+<p><img alt="step2" src="../../assets/neopixels/step2.jpg" /></p>
+<p>3. Connect a wire from A0 of the Arduino to data (DI) pin of the neopixel.</p>
+<p><img alt="step3" src="../../assets/neopixels/step3.jpg" /></p>
+<p>4. Connect a wire from 5v of the Arduino to 5v of the neopixel.</p>
+<p><img alt="step4" src="../../assets/neopixels/step4.jpg" /></p>
+<h2 id="test-code">Test Code</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/2r-DZJ49qwo?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="solid-colors">Solid Colors</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/u6vHqemjLW4?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="rainbow-challenge">Rainbow Challenge</h2>
+<p>Try to make a rainbow pattern. I used the colors from this <a href="https://www.webnots.com/vibgyor-rainbow-color-codes/">website</a> to make the rainbow.</p>
+<p><img alt="neopixels" src="../../assets/neopixels/neopixel.png" /></p>
+<h3 id="solution-video">Solution Video</h3>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/QpMltfsPRGA?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="christmas-light-pattern">Christmas Light Pattern</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/PcJtr08FU6A?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="snake">Snake</h2>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/famPtOz8qXE?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               
             </div>
           </div>

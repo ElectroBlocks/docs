@@ -10,7 +10,7 @@ This block is always present. It allows you to switch between the different type
 
 ## Loop Block
 
-![loop](../assets/what-is-electroblocks/loop.png)
+![loop](assets/getting-started/loop.png)
 
 This block will run forever on a real Arduino, but will only run 3 times through the virtual circuit. What this means is that all the blocks inside the loop block will run 3 times. You can change this number to whatever positive number you want.
 
@@ -22,26 +22,26 @@ As you drag blocks into the loop block the circuit starts to update.
 
 ## Blocks outside the loop are disabled
 
-![add blocks](../assets/getting-started/disabled_blocks.gif)
+![add blocks](assets/getting-started/disabled_blocks.gif)
 
 There are few exceptions to this, like setup blocks. We'll go over them in a later tutorial. :)
 
 ## Playing Circuit
 
-![playing code](../assets/getting-started/playing_circuit.gif)
+![playing code](assets/getting-started/playing_circuit.gif)
 
 Use the play button to see the circuit in action.
 
 ## How to see the code
 
-![seeing code](../assets/getting-started/seeing_arduino_code.gif)
+![seeing code](assets/getting-started/seeing_arduino_code.gif)
 
 ## Question about a block?
 
-![help](../assets/getting-started/help.png)
+![help](assets/getting-started/help.png)
 
 If you have a question about a block click on the question mark.
 
 ## Navbar
 
-![navbar](../assets/getting-started/navbar.png)
+![navbar](assets/getting-started/navbar.png)

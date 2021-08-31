@@ -1,9 +1,10 @@
 site_name: ElectroBlocks
 nav:
   - Getting Started: index.md
+  - Blocks: blocks.md
+  - Addons: addons.md
   - ElectroBlocks Lessons:
       - What is an Arduino?: lessons/what-is-an-arduino.md
-      - Setting up Chrome: lessons/setting-up-chrome.md
       - Blink: lessons/blink.md
       - Messages: lessons/messages.md
       - HighFive: lessons/highfive.md

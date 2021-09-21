@@ -30,7 +30,7 @@ How to write and basic program to control leds and how to uplaod that code to th
 
 1\. Have the front of the Arduino face towards 1 of the breadboard.
 
-![step1](../assets/blink/wiring-first-led/step1.jpg)
+![step1](../assets/blink/wiring-first-led/step1.png)
 
 2\. Connect a wire from - of the breadboard to a GND pin on the Arduino.
 
@@ -62,11 +62,11 @@ How to write and basic program to control leds and how to uplaod that code to th
 
 ![step1](../assets/blink/wiring-second-led/step1.jpg)
 
-2\. Insert the led positive (long) end of the led into (41, E) and the short (-) end into (40, E).
+2\. Insert the led's short (-) wire into (40, E) and the led's long (+) wire into (41,E).
 
 ![step2](../assets/blink/wiring-second-led/step2.jpg)
 
-3\. Connect a resistor from wiring(41, D) to (43, D).
+3\. Connect a resistor from wiring (41, D) to (43, D).
 
 ![step2](../assets/blink/wiring-second-led/step3.jpg)
 

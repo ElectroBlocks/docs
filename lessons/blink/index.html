@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="../../css/theme.css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   <link href="../../css/style.css" rel="stylesheet" />
   
   <script>
@@ -26,9 +26,8 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -42,7 +41,7 @@
         <a href="../.." class="icon icon-home"> ElectroBlocks</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -52,71 +51,39 @@
                     <li class="toctree-l1"><a class="reference internal" href="../..">Getting Started</a>
                     </li>
                 </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../blocks/">Blocks</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../addons/">Addons</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../what-is-an-arduino/">What is an Arduino?</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../setting-up-chrome/">Setting up Chrome</a>
-                    </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Blink</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#objective">Objective</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#kit">Kit</a>
+    <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
+    <li class="toctree-l2"><a class="reference internal" href="#blocks">Blocks</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
+    <li class="toctree-l2"><a class="reference internal" href="#wiring-diagram">Wiring Diagram</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#components">Components</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#led">Led</a>
+    <li class="toctree-l2"><a class="reference internal" href="#steps-first-led">Steps First LED</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#resistor">Resistor</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#breadboard">Breadboard</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#code">Code</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#wiring-the-first-led">Wiring the first led</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#uploading-test-code">Uploading Test Code</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#coding-blink">Coding Blink</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#wiring-the-second-led">Wiring the second led</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#challenge-make-both-leds-blink-at-the-same-time">Challenge make both leds blink at the same time.</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#challenge-make-the-led-alternate-on-and-off">Challenge make the led alternate on and off</a>
+    <li class="toctree-l2"><a class="reference internal" href="#steps-second-led">Steps Second LED</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#review">Review</a>
     </li>
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../messages/">Messages</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../wave/">Wave</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../rgbled/">RGB LED</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../neopixel/">NeoPixels</a>
-                    </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How Tos</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../howto/uploading-code/">Uploading Code</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../howto/debug/">Debuging</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../howto/saveproject/">Save Project</a>
@@ -157,81 +124,54 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
                 <h1 id="blink">Blink</h1>
-<h2 id="objective">Objective</h2>
+<h2 id="what-you-will-learn">What you will learn</h2>
 <p>How to write and basic program to control leds and how to uplaod that code to the Arduino.</p>
-<h2 id="kit">Kit</h2>
-<p><img alt="kit" src="../../assets/blink/kit.jpg" /></p>
 <h2 id="bill-of-materials">Bill of Materials</h2>
+<p><img alt="kit" src="../../assets/blink/kit.jpg" /></p>
 <ul>
-<li>1 x Arduino with cable</li>
-<li>1 x Breadboard</li>
-<li>2 x leds</li>
-<li>2 x resistors (100 - 400 ohms)</li>
+<li>1 x <a href="what-is-an-arduino.html">Arduino with cable</a></li>
+<li>1 x <a href="/addons.html#breadboard">Breadboard</a></li>
+<li>2 x <a href="/addons.html#led">Leds</a></li>
+<li>2 x <a href="/addons.html#resistor">Resistors</a> (100 - 400 ohms)</li>
 <li>5 x led wires</li>
 </ul>
-<h2 id="project">Project</h2>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/MvAc5SSh3qY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="video">Video</h2>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/BoCXdEJlM2E?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="components">Components</h2>
-<h3 id="led">Led</h3>
-<p>Led stands for light-emitting diode. A diode is an electronic component that allows electricity to flow one way.</p>
-<p>The important thing to note is the wires connected to it. The long wire is positive, and the short wire is negative. When you pass electricity through it, it will emit light.</p>
-<p><img alt="Led" src="../../assets/blink/led.jpg" /></p>
-<h3 id="resistor">Resistor</h3>
-<p>Resistors are used to decrease the number of electrons flowing through the wire. The colored bands mark the strength of the resistor. You can use the <a href="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/">calculator</a> to learn more.</p>
-<p><img alt="Resistor" src="../../assets/blink/resistor.jpg" /></p>
-<h3 id="breadboard">Breadboard</h3>
-<p>The breadboard is used to prototype electronic projects without gluing the wires together with metal. It does this by allowing wires to share electricity that is plugged into it.</p>
-<p>The green lines represent how which pins share electricity. In the middle of the board, pins connected up and down share electricity. On the side of the board, pins are connected side to side.</p>
-<p><img alt="breadboard" src="../../assets/blink/breadboard.jpg" /></p>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/kkb8RzGg_Ag?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="code">Code</h2>
-<p><img alt="example code" src="../../assets/blink/code_view.png" /></p>
-<p>In a real Arduino, the blocks inside the loop block will run on repeatedly until the Arduino loses power. The first blocks to run will be the ones on top.</p>
-<p>Notice the loop block has (runs x times) in it. That is how many times it will run on the virtual circuit.</p>
-<h2 id="steps">Steps</h2>
-<h3 id="wiring-the-first-led">Wiring the first led</h3>
-<p>1. Insert the led positive (long) end of the led into (27, E) and the short (-) end into (25, E).</p>
-<p><img alt="step 1" src="../../assets/blink/wiring-first-led/step1.jpg" /></p>
-<p>2. Connect a resistor from (27, D) to (27, B).</p>
-<p><img alt="step 2" src="../../assets/blink/wiring-first-led/step2.jpg" /></p>
-<p>3. Connect a wire from - of the breadboard to (25, A).</p>
-<p><img alt="step 3" src="../../assets/blink/wiring-first-led/step3.jpg" /></p>
-<p>4. Connect a wire from (27, A) to pin 7 on the Arduino.</p>
-<p><img alt="step 4" src="../../assets/blink/wiring-first-led/step4.jpg" /></p>
-<p>5. Connect a wire from - of the breadboard to GND of the Arduino.</p>
-<p><img alt="step 5" src="../../assets/blink/wiring-first-led/step5.jpg" /></p>
-<h3 id="uploading-test-code">Uploading Test Code</h3>
-<p>It takes about 10 seconds to upload code on the real Arduino. I editted it out of the videos.</p>
-<p>Go to <a href="https://electroblocks.org">electroblocks.org</a></p>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/zQi7C1hIvqw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h3 id="coding-blink">Coding Blink</h3>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/V3Xd82vxuoc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h3 id="wiring-the-second-led">Wiring the second led</h3>
-<p>1. Connect the long end of the led into hole (37, E) and the short into (36, E).</p>
-<p><img alt="step 1" src="../../assets/blink/wiring-second-led/step1.jpg" /></p>
-<p>2. Connect a wire from (36, A) to the ground - line of the breadboard.</p>
-<p><img alt="step 2" src="../../assets/blink/wiring-second-led/step2.jpg" /></p>
-<p>3. Connect a resistor from (37, D) to (37, B).</p>
-<p><img alt="step 3" src="../../assets/blink/wiring-second-led/step3.jpg" /></p>
-<p>4. Connect a wire from (37, A) to pin 5 on the Arduino.</p>
-<p><img alt="step 4" src="../../assets/blink/wiring-second-led/step4.jpg" /></p>
-<h2 id="challenge-make-both-leds-blink-at-the-same-time">Challenge make both leds blink at the same time.</h2>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/joqkdb_NEbw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="challenge-make-the-led-alternate-on-and-off">Challenge make the led alternate on and off</h2>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/7byRlOOwZ1Y?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<h2 id="blocks">Blocks</h2>
+<ul>
+<li><a href="/blocks.html#loop">Loop</a></li>
+<li><a href="/blocks.html#led">Led</a></li>
+<li><a href="/blocks.html#wait">Wait</a></li>
+</ul>
+<h2 id="wiring-diagram">Wiring Diagram</h2>
+<p><img alt="wiring diagram" src="../../assets/blink/wiring-diagram.png" /></p>
+<h2 id="steps-first-led">Steps First LED</h2>
+<p>1. Have the front of the Arduino face towards 1 of the breadboard.</p>
+<p><img alt="step1" src="../../assets/blink/wiring-first-led/step1.png" /></p>
+<p>2. Connect a wire from - of the breadboard to a GND pin on the Arduino.</p>
+<p><img alt="step2" src="../../assets/blink/wiring-first-led/step2.jpg" /></p>
+<p>3. Connect a wire from (28, A) to the - of the breadboard.</p>
+<p><img alt="step3" src="../../assets/blink/wiring-first-led/step3.jpg" /></p>
+<p>4. Insert the led's short (-) wire into (28, E) and the led's long (+) wire into (29,E).</p>
+<p><img alt="step4" src="../../assets/blink/wiring-first-led/step4.jpg" /></p>
+<p>5. Connect a resistor from (29, D) to (31, D).</p>
+<p><img alt="step5" src="../../assets/blink/wiring-first-led/step5.jpg" /></p>
+<p>6. Connect a wire from (31, A) to pin 7 on the Arduino.</p>
+<p><img alt="step6" src="../../assets/blink/wiring-first-led/step6.jpg" /></p>
+<p>7. Connect the Arduino into the computer.</p>
+<p><img alt="step7" src="../../assets/blink/wiring-first-led/step7.jpg" /></p>
+<h2 id="steps-second-led">Steps Second LED</h2>
+<p>1. Connect a wire from (40, A) to the - of the breadboard.</p>
+<p><img alt="step1" src="../../assets/blink/wiring-second-led/step1.jpg" /></p>
+<p>2. Insert the led's short (-) wire into (40, E) and the led's long (+) wire into (41,E).</p>
+<p><img alt="step2" src="../../assets/blink/wiring-second-led/step2.jpg" /></p>
+<p>3. Connect a resistor from wiring (41, D) to (43, D).</p>
+<p><img alt="step2" src="../../assets/blink/wiring-second-led/step3.jpg" /></p>
+<p>4. Connect a wire from (43, A) to pin 4 on the Arduino.</p>
+<p><img alt="step2" src="../../assets/blink/wiring-second-led/step4.jpg" /></p>
 <h2 id="review">Review</h2>
 <ul>
 <li>What is an led?</li>
@@ -246,10 +186,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../messages/" class="btn btn-neutral float-right" title="Messages">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../howto/debug/" class="btn btn-neutral float-right" title="Debuging">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../setting-up-chrome/" class="btn btn-neutral" title="Setting up Chrome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../what-is-an-arduino/" class="btn btn-neutral" title="What is an Arduino?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -272,17 +212,18 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../setting-up-chrome/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../messages/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../what-is-an-arduino/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../howto/debug/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
     <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>

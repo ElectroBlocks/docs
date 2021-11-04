@@ -9,26 +9,25 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>NeoPixels - ElectroBlocks</title>
+  <title>Neo Pixels - ElectroBlocks</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   <link href="../../css/style.css" rel="stylesheet" />
   
   <script>
     // Current page data
-    var mkdocs_page_name = "NeoPixels";
+    var mkdocs_page_name = "Neo Pixels";
     var mkdocs_page_input_path = "lessons/neopixel.md";
     var mkdocs_page_url = null;
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -42,7 +41,7 @@
         <a href="../.." class="icon icon-home"> ElectroBlocks</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -52,67 +51,23 @@
                     <li class="toctree-l1"><a class="reference internal" href="../..">Getting Started</a>
                     </li>
                 </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../blocks/">Blocks</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../addons/">Addons</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../what-is-an-arduino/">What is an Arduino?</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../setting-up-chrome/">Setting up Chrome</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../messages/">Messages</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../wave/">Wave</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../rgbled/">RGB LED</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">NeoPixels</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#objective">Objective</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#kit">Kit</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project">Project</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#video">Video</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-are-neopixels">What are neopixels?</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#arrows">Arrows</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#neopixel-setup-block">NeoPixel Setup Block</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#count-with-block-loop">Count With Block (loop).</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#test-code">Test Code</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#solid-colors">Solid Colors</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#rainbow-challenge">Rainbow Challenge</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#solution-video">Solution Video</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#christmas-light-pattern">Christmas Light Pattern</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#snake">Snake</a>
-    </li>
-    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How Tos</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../howto/uploading-code/">Uploading Code</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../howto/debug/">Debuging</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../howto/saveproject/">Save Project</a>
@@ -140,12 +95,8 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>ElectroBlocks Lessons &raquo;</li>
-        
-      
     
-    <li>NeoPixels</li>
+    <li>Neo Pixels</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -153,6 +104,7 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
@@ -216,15 +168,6 @@
           </div>
           <footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../../howto/uploading-code/" class="btn btn-neutral float-right" title="Uploading Code">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../rgbled/" class="btn btn-neutral" title="RGB LED"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
 
   <hr/>
 
@@ -244,17 +187,14 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../rgbled/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../../howto/uploading-code/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
 </div>
     <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>

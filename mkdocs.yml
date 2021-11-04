@@ -1,17 +1,12 @@
 site_name: ElectroBlocks
 nav:
   - Getting Started: index.md
+  - Blocks: blocks.md
+  - Addons: addons.md
   - ElectroBlocks Lessons:
       - What is an Arduino?: lessons/what-is-an-arduino.md
-      - Setting up Chrome: lessons/setting-up-chrome.md
       - Blink: lessons/blink.md
-      - Messages: lessons/messages.md
-      - HighFive: lessons/highfive.md
-      - Wave: lessons/wave.md
-      - RGB LED: lessons/rgbled.md
-      - NeoPixels: lessons/neopixel.md
   - How Tos:
-      - Uploading Code: howto/uploading-code.md
       - Debuging: howto/debug.md
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md

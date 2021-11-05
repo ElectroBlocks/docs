@@ -7,7 +7,6 @@ nav:
       - What is an Arduino?: lessons/what-is-an-arduino.md
       - Blink: lessons/blink.md
   - How Tos:
-      - Debuging: howto/debug.md
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md
 theme:

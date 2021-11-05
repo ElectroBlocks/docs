@@ -1,40 +1,28 @@
 # Getting Started
 
-<iframe width="535" height="450" src="https://www.youtube.com/embed/F-NO5-mIGvQ?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t086a8xrfqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Board Selector Block
+## Home Page
 
-<iframe width="535" height="450" src="https://www.youtube.com/embed/LiecZECeiXg?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![home page](/assets/index/whole-electroblocks.png)
 
-This block is always present. It allows you to switch between the different types of Arduinos.
+### Coding workspace
+
+Coding workspace is on the left of the screen and it's where you will drag and drop blocks into.
+
+### Virtual Circuit
+
+The virtual circuit gives you a live preview of what your code will do.
+
+### Steps
+
+Steps are the step by step instructions for what your code will do in the circuit.  Each step corresponds with a block.
 
 ## Loop Block
 
-![loop](assets/getting-started/loop.png)
+![loop](assets/index/loop-block.png)
 
-This block will run forever on a real Arduino, but will only run 3 times through the virtual circuit. What this means is that all the blocks inside the loop block will run 3 times. You can change this number to whatever positive number you want.
-
-## Building a circuit
-
-<iframe width="535" height="450" src="https://www.youtube.com/embed/SXRAHp0-yEA?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-As you drag blocks into the loop block the circuit starts to update.
-
-## Blocks outside the loop are disabled
-
-![add blocks](assets/getting-started/disabled_blocks.gif)
-
-There are few exceptions to this, like setup blocks. We'll go over them in a later tutorial. :)
-
-## Playing Circuit
-
-![playing code](assets/getting-started/playing_circuit.gif)
-
-Use the play button to see the circuit in action.
-
-## How to see the code
-
-![seeing code](assets/getting-started/seeing_arduino_code.gif)
+This block will run forever on a real Arduino but only three times through the virtual circuit. What this means is that all the blocks inside the loop block will run three times. You can change this number to whatever positive number you want.
 
 ## Question about a block?
 
@@ -42,6 +30,21 @@ Use the play button to see the circuit in action.
 
 If you have a question about a block click on the question mark.
 
-## Navbar
 
-![navbar](assets/getting-started/navbar.png)
+## Code Page
+
+![code view](assets/index/code-view.png)
+
+This shows you the text base code that you are writing.  
+
+## Arduino Page
+
+![code view](assets/index/code-view.png)
+
+With the Arduino page, you can upload code, send and receive messages and live debugging.
+
+## Lesson Page
+
+![lessons page](assets/index/lessons.png)
+
+This page displays all the lessons currently avialable.

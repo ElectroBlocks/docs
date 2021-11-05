@@ -1,6 +1,6 @@
 # Blink
 
-[comment]: <> (Put video here)
+<iframe width="535" height="450" src="https://www.youtube.com/embed/ql9KSAkS9kc?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What you will learn
 

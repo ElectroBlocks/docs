@@ -14,13 +14,13 @@ To learn what an Arduino is and some of the parts of an Arduino?
 
 ## Video
 
-<iframe width="535" height="450" src="https://www.youtube.com/embed/r5HivrgRAIw?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="535" height="450" src="https://www.youtube.com/embed/xqGvigvGlYY?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is an Arduino?
 
 An Arduino is a type of computer. The main advantage of Arduino is that they make it easy to build electronic projects. Arduino comes in many shapes and sizes. In the course, we'll mainly be using the Arduino Uno.
 
-![Arduino](../assets/what-is-an-arduino/what-is-an-arduino.jpg)
+![Arduino](../assets/what-is-an-arduino/all-arduinos.jpg)
 
 ### What are pins?
 

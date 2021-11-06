@@ -14,7 +14,7 @@ How to write and basic program to control leds and how to uplaod that code to th
 - 1 x [Breadboard](/addons.html#breadboard)
 - 2 x [Leds](/addons.html#led)
 - 2 x [Resistors](/addons.html#resistor) (100 - 400 ohms)
-- 5 x led wires
+- 5 x wires
 
 ## Blocks
 

@@ -18,9 +18,9 @@ How to write and basic program to control leds and how to uplaod that code to th
 
 ## Blocks
 
-- [Loop](/blocks.html#loop)
-- [Led](/blocks.html#led)
-- [Wait](/blocks.html#wait)
+- [Loop](/blocks#loop)
+- [Led](/blocks#led)
+- [Wait](/blocks#wait)
 
 ## Wiring Diagram
 

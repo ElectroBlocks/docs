@@ -1,5 +1,28 @@
 # Blocks
 
+
+## Button Setup
+
+![button setup block](assets/blocks/button_setup_block.png)
+
+
+This block will tells the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button is pressed or not in the loop that the circuit is running.
+
+
+## If 
+
+![if block](assets/blocks/if_block.png)
+
+
+The block is used to make decisions.  If what is connectted to the if block is true then what is inside the do block will be ran.
+
+## Is Button Pressed
+
+![if block](assets/blocks/is_button_pressed.png)
+
+
+This block will return if the button is pressed.
+
 ## Loop
 
 Blocks inside the block will run forever on the actual Arduino.  It will be from top to bottom, and once it reaches the bottom block, it will go back to the top block.  The simulator on the right of the screen will run three times. 
@@ -11,6 +34,13 @@ Blocks inside the block will run forever on the actual Arduino.  It will be from
 The LED block controls whether an led is on or off.  The first drop-down decides which [Arduino Pin](/lessons/what-is-an-arduino.html#what-are-pins) the led is connected to.  The second dropdown turns the LED on or off.
 
 ![loop block](assets/blocks/led.png)
+
+## Servo
+
+The servo controls the data pin that the servo is connectted to and number of degress that you want to rotate the servo.  The higher the number the more the servo will rotate.
+
+![servo block](assets/blocks/servo.png)
+
 
 ## Wait
 

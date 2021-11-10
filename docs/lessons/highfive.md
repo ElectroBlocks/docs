@@ -11,10 +11,17 @@
 
 ## Bill of Materials
 
+- 1 x [Arduino with cable](what-is-an-arduino.html)
+- 1 x [Breadboard](/addons.html#breadboard)
+- 5 x wires
 
 ## Blocks
 
-- [Loop](/blocks.html#loop)
+- [Servo](/blocks#servo)
+- [Wait](/blocks#wait)
+- [If](/blocks#if)
+- [Button Setup](/blocks#button-setup)
+- [Is Button Pressed](/blocks#is-button-pressed)
 
 ## Wiring Diagram
 

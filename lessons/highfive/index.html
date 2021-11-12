@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Blink - ElectroBlocks</title>
+  <title>HighFive Machine - ElectroBlocks</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Blink";
-    var mkdocs_page_input_path = "lessons/blink.md";
+    var mkdocs_page_name = "HighFive Machine";
+    var mkdocs_page_input_path = "lessons/highfive.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -63,7 +63,9 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../what-is-an-arduino/">What is an Arduino?</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Blink</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">HighFive Machine</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
     </li>
@@ -73,15 +75,11 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#wiring-diagram">Wiring Diagram</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#steps-first-led">Steps First LED</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#steps-second-led">Steps Second LED</a>
+    <li class="toctree-l2"><a class="reference internal" href="#building-highfive-machine">Building Highfive Machine</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#review">Review</a>
     </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive Machine</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How Tos</span></p>
@@ -116,7 +114,7 @@
         
       
     
-    <li>Blink</li>
+    <li>HighFive Machine</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -129,51 +127,73 @@
             <div class="section">
               
                 <h1 id="blink">Blink</h1>
-<iframe width="535" height="450" src="https://www.youtube.com/embed/ql9KSAkS9kc?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- YOUTUBE VIDEO EMBED HERE -->
 
 <h2 id="what-you-will-learn">What you will learn</h2>
-<p>How to write and basic program to control leds and how to uplaod that code to the Arduino.</p>
-<h2 id="bill-of-materials">Bill of Materials</h2>
-<p><img alt="kit" src="../../assets/blink/kit.jpg" /></p>
 <ul>
-<li>1 x <a href="lessons/what-is-an-arduino/">Arduino with cable</a></li>
-<li>1 x <a href="/addons#breadboard">Breadboard</a></li>
-<li>2 x <a href="/addons#led">Leds</a></li>
-<li>2 x <a href="/addons#resistor">Resistors</a> (100 - 400 ohms)</li>
-<li>5 x wires</li>
+<li>How to build a highfive machine</li>
+<li>How to make an Arduino respond when something happens</li>
+<li>If Blocks</li>
+<li>Electrical components like servos and push buttons</li>
+</ul>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<p><img alt="kit" src="../../assets/highfive/kit.jpeg" /></p>
+<ul>
+<li>1 x <a href="/lessons/what-is-an-arduino/">Arduino with cable</a></li>
+<li>1 x <a href="/addons/#breadboard">Breadboard</a></li>
+<li>1 x <a href="/addons/#push-buttons">Push Button</a></li>
+<li>1 x <a href="/addons/#servos">Servo</a></li>
+<li>1 x posterboard</li>
+<li>1 x scissor</li>
+<li>7 x wires</li>
 </ul>
 <h2 id="blocks">Blocks</h2>
 <ul>
-<li><a href="/blocks#loop">Loop</a></li>
-<li><a href="/blocks#led">Led</a></li>
+<li><a href="/blocks#servo">Servo</a></li>
 <li><a href="/blocks#wait">Wait</a></li>
+<li><a href="/blocks#if">If</a></li>
+<li><a href="/blocks#button-setup">Button Setup</a></li>
+<li><a href="/blocks#is-button-pressed">Is Button Pressed</a></li>
 </ul>
 <h2 id="wiring-diagram">Wiring Diagram</h2>
-<p><img alt="wiring diagram" src="../../assets/blink/wiring-diagram.png" /></p>
-<h2 id="steps-first-led">Steps First LED</h2>
+<p><img alt="wiring diagram" src="../../assets/highfive/wiring-diagram.png" /></p>
+<h2 id="building-highfive-machine">Building Highfive Machine</h2>
 <p>1. Have the front of the Arduino face towards 1 of the breadboard.</p>
 <p><img alt="step1" src="../../assets/blink/wiring-first-led/step1.png" /></p>
-<p>2. Connect a wire from - of the breadboard to a GND pin on the Arduino.</p>
-<p><img alt="step2" src="../../assets/blink/wiring-first-led/step2.jpg" /></p>
-<p>3. Connect a wire from (28, A) to the - of the breadboard.</p>
-<p><img alt="step3" src="../../assets/blink/wiring-first-led/step3.jpg" /></p>
-<p>4. Insert the led's short (-) wire into (28, E) and the led's long (+) wire into (29,E).</p>
-<p><img alt="step4" src="../../assets/blink/wiring-first-led/step4.jpg" /></p>
-<p>5. Connect a resistor from (29, D) to (31, D).</p>
-<p><img alt="step5" src="../../assets/blink/wiring-first-led/step5.jpg" /></p>
-<p>6. Connect a wire from (31, A) to pin 7 on the Arduino.</p>
-<p><img alt="step6" src="../../assets/blink/wiring-first-led/step6.jpg" /></p>
-<p>7. Connect the Arduino into the computer.</p>
-<p><img alt="step7" src="../../assets/blink/wiring-first-led/step7.jpg" /></p>
-<h2 id="steps-second-led">Steps Second LED</h2>
-<p>1. Connect a wire from (40, A) to the - of the breadboard.</p>
-<p><img alt="step1" src="../../assets/blink/wiring-second-led/step1.jpg" /></p>
-<p>2. Insert the led's short (-) wire into (40, E) and the led's long (+) wire into (41,E).</p>
-<p><img alt="step2" src="../../assets/blink/wiring-second-led/step2.jpg" /></p>
-<p>3. Connect a resistor from wiring (41, D) to (43, D).</p>
-<p><img alt="step2" src="../../assets/blink/wiring-second-led/step3.jpg" /></p>
-<p>4. Connect a wire from (43, A) to pin 4 on the Arduino.</p>
-<p><img alt="step2" src="../../assets/blink/wiring-second-led/step4.jpg" /></p>
+<p>2. Connect a wire from (27, A) to the - of the breadboard.</p>
+<p><img alt="step2" src="../../assets/highfive/step2.jpeg" /></p>
+<p>3. Plug one of the wires connected to the button to hole (27, E) and the other wire connectted to the button to (30, E)</p>
+<p><img alt="step3a" src="../../assets/highfive/step3a.jpeg" /></p>
+<p><img alt="step3b" src="../../assets/highfive/step3b.jpeg" /></p>
+<p>4. Connect a wire from (30, A) to pin 7 on the Arduino.</p>
+<p><img alt="step4" src="../../assets/highfive/step4.jpeg" /></p>
+<p>5. Connect a wire from (39, E) to the ground wire on the servo.  On these servos the ground wire is brown.</p>
+<p><img alt="step4" src="../../assets/highfive/step5.jpeg" /></p>
+<p>6. Connect a wire from (40, E) to the power wire on the servo.  On these servos the power wire is red.</p>
+<p><img alt="step4" src="../../assets/highfive/step6.jpeg" /></p>
+<p>7. Connect a wire from (42, E) to the data on the servo.  On these servos the power wire is orange.</p>
+<p><img alt="step4" src="../../assets/highfive/step7.jpeg" /></p>
+<p>8. Connect a wire from (39, A) to the - of the breadboard.</p>
+<p><img alt="step8" src="../../assets/highfive/step8.jpeg" /></p>
+<p>9. Connect a wire from (40, A) to the + of the breadboard.</p>
+<p><img alt="step9" src="../../assets/highfive/step9.jpeg" /></p>
+<p>10. Connect a wire from (42, A) to pin 3 on the Arduino.</p>
+<p><img alt="step10" src="../../assets/highfive/step10.jpeg" /></p>
+<p>11. Connect a wire from - of the breadboard to a GND pin on the Arduino.</p>
+<p><img alt="step11" src="../../assets/highfive/step11.jpeg" /></p>
+<p>12. Connect a wire from + of the breadboard to a 5v pin on the Arduino.</p>
+<p><img alt="step12" src="../../assets/highfive/step12.jpeg" /></p>
+<p>13. Trace and cut out your hand from a piece of posterboard.</p>
+<p><img alt="step13a" src="../../assets/highfive/step13a.jpg" /></p>
+<p><img alt="step13b" src="../../assets/highfive/step13b.jpg" /></p>
+<p>14. Tape a popiscle stick the back of your posterboard hand.</p>
+<p><img alt="step14" src="../../assets/highfive/step14.jpeg" /></p>
+<p>15. Tape the plastic wing to the popiscle stick.</p>
+<p><img alt="step14" src="../../assets/highfive/step15.jpeg" /></p>
+<p>16. Tape the servo to the table.</p>
+<p><img alt="step14" src="../../assets/highfive/step16.jpeg" /></p>
+<p>17. Connect the servos wings to the servo.</p>
+<p><img alt="step14" src="../../assets/highfive/step17.png" /></p>
 <h2 id="review">Review</h2>
 <ul>
 <li>What is an led?</li>
@@ -188,10 +208,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../highfive/" class="btn btn-neutral float-right" title="HighFive Machine">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../howto/saveproject/" class="btn btn-neutral float-right" title="Save Project">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../what-is-an-arduino/" class="btn btn-neutral" title="What is an Arduino?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../blink/" class="btn btn-neutral" title="Blink"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -217,10 +237,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../what-is-an-arduino/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../blink/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../highfive/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../howto/saveproject/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

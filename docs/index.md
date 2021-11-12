@@ -4,7 +4,7 @@
 
 ## Home Page
 
-![home page](/assets/index/whole-electroblocks.png)
+![home page](assets/index/whole-electroblocks.png)
 
 ### Coding workspace
 
@@ -26,7 +26,7 @@ This block will run forever on a real Arduino but only three times through the v
 
 ## Question about a block?
 
-![help](assets/getting-started/help.png)
+![help](assets/index/help.png)
 
 If you have a question about a block click on the question mark.
 

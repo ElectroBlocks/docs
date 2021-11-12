@@ -10,10 +10,10 @@ How to write and basic program to control leds and how to uplaod that code to th
 
 ![kit](../assets/blink/kit.jpg)
 
-- 1 x [Arduino with cable](what-is-an-arduino.html)
-- 1 x [Breadboard](/addons.html#breadboard)
-- 2 x [Leds](/addons.html#led)
-- 2 x [Resistors](/addons.html#resistor) (100 - 400 ohms)
+- 1 x [Arduino with cable](lessons/what-is-an-arduino/)
+- 1 x [Breadboard](/addons#breadboard)
+- 2 x [Leds](/addons#led)
+- 2 x [Resistors](/addons#resistor) (100 - 400 ohms)
 - 5 x wires
 
 ## Blocks

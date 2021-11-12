@@ -6,6 +6,7 @@ nav:
   - ElectroBlocks Lessons:
       - What is an Arduino?: lessons/what-is-an-arduino.md
       - Blink: lessons/blink.md
+      - HighFive Machine: lessons/highfive.md
   - How Tos:
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md

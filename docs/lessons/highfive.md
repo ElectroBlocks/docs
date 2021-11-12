@@ -7,13 +7,19 @@
 - How to build a highfive machine
 - How to make an Arduino respond when something happens
 - If Blocks
-- Servos
+- Electrical components like servos and push buttons
 
 ## Bill of Materials
 
-- 1 x [Arduino with cable](what-is-an-arduino.html)
-- 1 x [Breadboard](/addons.html#breadboard)
-- 5 x wires
+![kit](../assets/highfive/kit.jpeg)
+
+- 1 x [Arduino with cable](/lessons/what-is-an-arduino/)
+- 1 x [Breadboard](/addons/#breadboard)
+- 1 x [Push Button](/addons/#push-buttons)
+- 1 x [Servo](/addons/#servos)
+- 1 x posterboard
+- 1 x scissor
+- 7 x wires
 
 ## Blocks
 
@@ -24,6 +30,8 @@
 - [Is Button Pressed](/blocks#is-button-pressed)
 
 ## Wiring Diagram
+
+![wiring diagram](../assets/highfive/wiring-diagram.png)
 
 
 ## Building Highfive Machine

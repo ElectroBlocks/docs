@@ -44,7 +44,7 @@
 
 ![step2](../assets/highfive/step2.jpeg)
 
-3\. Plug one of the wires connected to the button to hole (27, E) and the other wire connectted to the button to (30, E)
+3\. Connect one of the buttons to hole  (27, E) and the other wire to (30, E).
 
 ![step3a](../assets/highfive/step3a.jpeg)
 
@@ -54,16 +54,16 @@
 
 ![step4](../assets/highfive/step4.jpeg)
 
-5\. Connect a wire from (39, E) to the ground wire on the servo.  On these servos the ground wire is brown.
+5\. Connect a wire from (39, E) to the ground wire on the servo.  On these servos, the ground wire is brown.
 
 ![step4](../assets/highfive/step5.jpeg)
 
 
-6\. Connect a wire from (40, E) to the power wire on the servo.  On these servos the power wire is red.
+6\. Connect a wire from (40, E) to the power wire on the servo.  On these servos, the power wire is red.
 
 ![step4](../assets/highfive/step6.jpeg)
 
-7\. Connect a wire from (42, E) to the data on the servo.  On these servos the power wire is orange.
+7\. Connect a wire from (42, E) to the data on the servo.  On these servos, the data wire is orange.
 
 ![step4](../assets/highfive/step7.jpeg)
 
@@ -93,11 +93,11 @@
 
 ![step13b](../assets/highfive/step13b.jpg)
 
-14\. Tape a popiscle stick the back of your posterboard hand.
+14\. Tape a popsicle stick the back of your posterboard hand.
 
 ![step14](../assets/highfive/step14.jpeg)
 
-15\. Tape the plastic wing to the popiscle stick.
+15\. Tape the plastic wing to the popsicle stick.
 
 ![step14](../assets/highfive/step15.jpeg)
 

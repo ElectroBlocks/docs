@@ -7,6 +7,7 @@ nav:
       - What is an Arduino?: lessons/what-is-an-arduino.md
       - Blink: lessons/blink.md
       - HighFive Machine: lessons/highfive.md
+      - Wave Machine: lessons/wave.md
   - How Tos:
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md

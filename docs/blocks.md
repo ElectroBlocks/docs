@@ -8,6 +8,11 @@
 
 This block will tells the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button is pressed or not in the loop that the circuit is running.
 
+## Get Variable 
+
+![get variable](assets/blocks/get_variable.png)
+
+A variable is one way you can tell the computer to store something.  The get variable block will get the value that is being stored inside the variable.  
 
 ## If 
 
@@ -28,6 +33,15 @@ This block will return if the button is pressed.
 Blocks inside the block will run forever on the actual Arduino.  It will be from top to bottom, and once it reaches the bottom block, it will go back to the top block.  The simulator on the right of the screen will run three times. 
 
 ![loop block](assets/blocks/loop.png)
+
+## Loop With
+
+![loop with adding](assets/blocks/loopwith1.png)
+
+![loop block subtracting](assets/blocks/loopwith2.png)
+
+This block is used to repeat something over and over again.  It creates a variable often called "i".  It will start i at the from number and will add or subtract the value stored in i until it gets to the to number.  The best way to understand loops in Electroblocks is to play around with them.
+
 
 ## Led
 

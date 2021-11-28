@@ -56,11 +56,15 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#button-setup">Button Setup</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#get-variable">Get Variable</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#if">If</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#is-button-pressed">Is Button Pressed</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#loop">Loop</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#loop-with">Loop With</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#led">Led</a>
     </li>
@@ -82,6 +86,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="../lessons/blink/">Blink</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../lessons/highfive/">HighFive Machine</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../lessons/wave/">Wave Machine</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How Tos</span></p>
@@ -128,6 +134,9 @@
 <h2 id="button-setup">Button Setup</h2>
 <p><img alt="button setup block" src="../assets/blocks/button_setup_block.png" /></p>
 <p>This block will tells the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button is pressed or not in the loop that the circuit is running.</p>
+<h2 id="get-variable">Get Variable</h2>
+<p><img alt="get variable" src="../assets/blocks/get_variable.png" /></p>
+<p>A variable is one way you can tell the computer to store something.  The get variable block will get the value that is being stored inside the variable.  </p>
 <h2 id="if">If</h2>
 <p><img alt="if block" src="../assets/blocks/if_block.png" /></p>
 <p>The block is used to make decisions.  If what is connectted to the if block is true then what is inside the do block will be ran.</p>
@@ -137,6 +146,10 @@
 <h2 id="loop">Loop</h2>
 <p>Blocks inside the block will run forever on the actual Arduino.  It will be from top to bottom, and once it reaches the bottom block, it will go back to the top block.  The simulator on the right of the screen will run three times. </p>
 <p><img alt="loop block" src="../assets/blocks/loop.png" /></p>
+<h2 id="loop-with">Loop With</h2>
+<p><img alt="loop with adding" src="../assets/blocks/loopwith1.png" /></p>
+<p><img alt="loop block subtracting" src="../assets/blocks/loopwith2.png" /></p>
+<p>This block is used to repeat something over and over again.  It creates a variable often called "i".  It will start i at the from number and will add or subtract the value stored in i until it gets to the to number.  The best way to understand loops in Electroblocks is to play around with them.</p>
 <h2 id="led">Led</h2>
 <p>The LED block controls whether an led is on or off.  The first drop-down decides which <a href="/lessons/what-is-an-arduino.html#what-are-pins">Arduino Pin</a> the led is connected to.  The second dropdown turns the LED on or off.</p>
 <p><img alt="loop block" src="../assets/blocks/led.png" /></p>

@@ -1,6 +1,8 @@
 # Blink
 
-<iframe width="535" height="450" src="https://www.youtube.com/embed/ql9KSAkS9kc?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FV6DvaFUt1LsXJoNCkBEe%2Fstep_BG5g6G5DbxCUt8JjV63E.mp4?alt=media&token=7c3804bc-212f-42af-b9fa-c2aff262474e">
+</video>
 
 ## What you will learn
 
@@ -10,17 +12,17 @@ How to write and basic program to control leds and how to uplaod that code to th
 
 ![kit](../assets/blink/kit.jpg)
 
-- 1 x [Arduino with cable](lessons/what-is-an-arduino/)
-- 1 x [Breadboard](/addons#breadboard)
-- 2 x [Leds](/addons#led)
-- 2 x [Resistors](/addons#resistor) (100 - 400 ohms)
+- 1 x [Arduino with cable](../what-is-an-arduino/)
+- 1 x [Breadboard](../../addons#breadboard)
+- 2 x [Leds](../../addons#led)
+- 2 x [Resistors](../../addons#resistor) (100 - 400 ohms)
 - 5 x wires
 
 ## Blocks
 
-- [Loop](/blocks#loop)
-- [Led](/blocks#led)
-- [Wait](/blocks#wait)
+- [Loop](../../blocks#loop)
+- [Led](../../blocks#led)
+- [Wait](../../blocks#wait)
 
 ## Wiring Diagram
 

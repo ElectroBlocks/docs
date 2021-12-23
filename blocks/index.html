@@ -54,7 +54,13 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Blocks</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#arduino-message-setup">Arduino Message Setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arduino-get-message">Arduino Get Message</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#button-setup">Button Setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#compare">Compare</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#get-variable">Get Variable</a>
     </li>
@@ -84,6 +90,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="../lessons/what-is-an-arduino/">What is an Arduino?</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../lessons/blink/">Blink</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../lessons/sending-messages/">Sending Messages</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../lessons/highfive/">HighFive Machine</a>
                     </li>
@@ -131,9 +139,20 @@
             <div class="section">
               
                 <h1 id="blocks">Blocks</h1>
+<h2 id="arduino-message-setup">Arduino Message Setup</h2>
+<p><img alt="message setup block" src="../assets/blocks/message-setup.png" /></p>
+<p>This block will give the Arduino the ablity to send and recieve messages.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit that a message is being recieved and what that message is in the loop number that the Arduino is currently executing.</p>
+<h2 id="arduino-get-message">Arduino Get Message</h2>
+<p><img alt="Arduino Get Message" src="../assets/blocks/arduino-get-message.png" /></p>
+<p>This block get the message being sent from the computer to the Arduino.</p>
 <h2 id="button-setup">Button Setup</h2>
 <p><img alt="button setup block" src="../assets/blocks/button_setup_block.png" /></p>
-<p>This block will tells the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button is pressed or not in the loop that the circuit is running.</p>
+<p>This block will tells the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button 
+is pressed or not in the loop that the circuit is running.</p>
+<h2 id="compare">Compare</h2>
+<p>The block will compare the blocks on the right and left.  It will use the option in the middle to make the evaulation.  This block will equal true or false.  If the option is set to "=" it will return true if what is on the right and left side is true.  It it's set to "≠" then what is true if what is on the right and left side are not equal.</p>
+<p><img alt="compare blocks" src="../assets/blocks/compare-blocks.png" />
+<img alt="compare output" src="../assets/blocks/compare-output.png" /></p>
 <h2 id="get-variable">Get Variable</h2>
 <p><img alt="get variable" src="../assets/blocks/get_variable.png" /></p>
 <p>A variable is one way you can tell the computer to store something.  The get variable block will get the value that is being stored inside the variable.  </p>

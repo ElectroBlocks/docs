@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Wave Machine - ElectroBlocks</title>
+  <title>Sending Messages - ElectroBlocks</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Wave Machine";
-    var mkdocs_page_input_path = "lessons/wave.md";
+    var mkdocs_page_name = "Sending Messages";
+    var mkdocs_page_input_path = "lessons/sending-messages.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -65,11 +65,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../sending-messages/">Sending Messages</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive Machine</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Wave Machine</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Sending Messages</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
     </li>
@@ -77,9 +73,19 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#blocks">Blocks</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding-video">Coding Video</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wiring-diagram">Wiring Diagram</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#challenge">Challenge</a>
+    </li>
     </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive Machine</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../wave/">Wave Machine</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How Tos</span></p>
@@ -114,7 +120,7 @@
         
       
     
-    <li>Wave Machine</li>
+    <li>Sending Messages</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -126,37 +132,40 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="blink">Blink</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhUNUEnRkvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                <h1 id="sending-messages">Sending Messages</h1>
 <h2 id="what-you-will-learn">What you will learn</h2>
 <ul>
-<li>How to build a wave machine</li>
-<li>How to use a count with block to make something repeat</li>
+<li>How to send messages to an Arduino</li>
+<li>How to write code to respond to thoses messages to control an LED</li>
 </ul>
 <h2 id="bill-of-materials">Bill of Materials</h2>
-<p><img alt="kit" src="../../assets/highfive/kit.jpeg" /></p>
+<p><img alt="kit" src="../../assets/blink/kit.jpg" /></p>
 <ul>
-<li>1 x <a href="/lessons/what-is-an-arduino/">Arduino with cable</a></li>
-<li>1 x <a href="/addons/#breadboard">Breadboard</a></li>
-<li>1 x <a href="/addons/#push-buttons">Push Button</a></li>
-<li>1 x <a href="/addons/#servos">Servo</a></li>
-<li>1 x posterboard</li>
-<li>1 x scissor</li>
-<li>7 x wires</li>
+<li>1 x <a href="../what-is-an-arduino/">Arduino with cable</a></li>
+<li>1 x <a href="../../addons#breadboard">Breadboard</a></li>
+<li>1 x <a href="../../addons#led">Leds</a></li>
+<li>1 x <a href="../../addons#resistor">Resistors</a> (100 - 400 ohms)</li>
+<li>4 x wires</li>
 </ul>
 <h2 id="blocks">Blocks</h2>
 <ul>
-<li><a href="/blocks/#loop-with">Loop with</a></li>
-<li><a href="/blocks/#get-variable">Get Variable</a></li>
-<li><a href="/blocks#servo">Servo</a></li>
-<li><a href="/blocks#wait">Wait</a></li>
-<li><a href="/blocks#if">If</a></li>
-<li><a href="/blocks#button-setup">Button Setup</a></li>
-<li><a href="/blocks#is-button-pressed">Is Button Pressed</a></li>
+<li><a href="../../blocksarduino-message-setup">Arduino Message Setup</a></li>
+<li><a href="../../blocks#arduino-get-message">Arduino Get Message</a></li>
+<li><a href="../../blocks#compare">Compare Block</a></li>
+<li><a href="../../blocks#if">If</a></li>
+<li><a href="../../blocks#led">Led</a></li>
 </ul>
+<h2 id="coding-video">Coding Video</h2>
+<video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FV6DvaFUt1LsXJoNCkBEe%2Fstep_BG5g6G5DbxCUt8JjV63E.mp4?alt=media&token=e73ddfd7-3c0d-4964-bcee-383cc62f0562">
+</video>
+
+<h2 id="wiring-diagram">Wiring Diagram</h2>
+<p><img alt="wiring diagram" src="../../assets/sending-messages/wiring-diagram.png" /></p>
 <h2 id="steps">Steps</h2>
-<p>The steps for wave machine are the same steps for building <a href="../highfive/#building-highfive-machine">high five machine</a></p>
+<p>The steps for sending message are the same steps for wiring the first led in <a href="../blink/#steps-first-led">blink lesson</a>.</p>
+<h2 id="challenge">Challenge</h2>
+<p>See if you can wire up another LED and come up with a message that can make it go on and off.</p>
               
             </div>
           </div>
@@ -164,10 +173,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../howto/saveproject/" class="btn btn-neutral float-right" title="Save Project">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../highfive/" class="btn btn-neutral float-right" title="HighFive Machine">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../highfive/" class="btn btn-neutral" title="HighFive Machine"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../blink/" class="btn btn-neutral" title="Blink"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -193,10 +202,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../highfive/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../blink/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../howto/saveproject/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../highfive/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

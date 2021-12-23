@@ -31,4 +31,4 @@
 
 ## Steps
 
-The steps for wave machine are the same steps for building [high five machine](/lessons/highfive/#building-highfive-machine)
+The steps for wave machine are the same steps for building [high five machine](../highfive/#building-highfive-machine)

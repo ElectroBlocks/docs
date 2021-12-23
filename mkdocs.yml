@@ -6,6 +6,7 @@ nav:
   - ElectroBlocks Lessons:
       - What is an Arduino?: lessons/what-is-an-arduino.md
       - Blink: lessons/blink.md
+      - Sending Messages: lessons/sending-messages.md
       - HighFive Machine: lessons/highfive.md
       - Wave Machine: lessons/wave.md
   - How Tos:

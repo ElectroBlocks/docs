@@ -1,7 +1,5 @@
 # Blink
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v6Y9LhLaNoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## What you will learn
 
 - How to build a highfive machine
@@ -13,26 +11,31 @@
 
 ![kit](../assets/highfive/kit.jpeg)
 
-- 1 x [Arduino with cable](/lessons/what-is-an-arduino/)
-- 1 x [Breadboard](/addons/#breadboard)
-- 1 x [Push Button](/addons/#push-buttons)
-- 1 x [Servo](/addons/#servos)
+- 1 x [Arduino with cable](../what-is-an-arduino/)
+- 1 x [Breadboard](../../addons#breadboard)
+- 1 x [Push Button](../../addons/#push-buttons)
+- 1 x [Servo](../../addons/#servos)
 - 1 x posterboard
 - 1 x scissor
 - 7 x wires
 
 ## Blocks
 
-- [Servo](/blocks#servo)
-- [Wait](/blocks#wait)
-- [If](/blocks#if)
-- [Button Setup](/blocks#button-setup)
-- [Is Button Pressed](/blocks#is-button-pressed)
+- [Servo](../../blocks#servo)
+- [Wait](../../blocks#wait)
+- [If](../../blocks#if)
+- [Button Setup](../../blocks#button-setup)
+- [Is Button Pressed](../../blocks#is-button-pressed)
 
 ## Wiring Diagram
 
 ![wiring diagram](../assets/highfive/wiring-diagram.png)
 
+## Coding Video
+
+<video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FGcym9zmref566fEFWgYy%2Fstep_Vs5B6xqmI07XAXGNCs4n.mp4?alt=media&token=91ccea63-4d80-4b5d-a243-597eaf92ecea">
+</video>
 
 ## Building Highfive Machine
 

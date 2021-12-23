@@ -1,9 +1,5 @@
 # Blink
 
-<video controls >
-<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FV6DvaFUt1LsXJoNCkBEe%2Fstep_BG5g6G5DbxCUt8JjV63E.mp4?alt=media&token=7c3804bc-212f-42af-b9fa-c2aff262474e">
-</video>
-
 ## What you will learn
 
 How to write and basic program to control leds and how to uplaod that code to the Arduino.
@@ -23,6 +19,12 @@ How to write and basic program to control leds and how to uplaod that code to th
 - [Loop](../../blocks#loop)
 - [Led](../../blocks#led)
 - [Wait](../../blocks#wait)
+
+## Coding Video
+
+<video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FV6DvaFUt1LsXJoNCkBEe%2Fstep_BG5g6G5DbxCUt8JjV63E.mp4?alt=media&token=e73ddfd7-3c0d-4964-bcee-383cc62f0562">
+</video>
 
 ## Wiring Diagram
 

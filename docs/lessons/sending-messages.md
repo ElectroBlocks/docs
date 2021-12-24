@@ -17,7 +17,7 @@
 
 ## Blocks
 
-- [Arduino Message Setup](../../blocksarduino-message-setup)
+- [Arduino Message Setup](../../blocks#arduino-message-setup)
 - [Arduino Get Message](../../blocks#arduino-get-message)
 - [Compare Block](../../blocks#compare)
 - [If](../../blocks#if)

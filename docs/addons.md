@@ -12,6 +12,10 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yo6JI_bzUzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## RGB LED
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wqzfbImsrPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Resistor
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3MkWZ38WY5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

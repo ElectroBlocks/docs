@@ -9,6 +9,7 @@ nav:
       - Sending Messages: lessons/sending-messages.md
       - HighFive Machine: lessons/highfive.md
       - Wave Machine: lessons/wave.md
+      - RGB LED: lessons/rgbled.md
   - How Tos:
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md

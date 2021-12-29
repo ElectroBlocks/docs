@@ -34,7 +34,7 @@ RGB stands for red, green, and blue.  It allows you mix those colors to create c
 ## Coding Video
 
 <video controls >
-<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/mgMqiXuPbEdHtr6UoPVbQozFQwD2%2FIqveFJLlpwpp9G5A3bbt%2Fstep_CsWMvxDZLqAA0ExQPkh9.mp4">
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/mgMqiXuPbEdHtr6UoPVbQozFQwD2%2FIqveFJLlpwpp9G5A3bbt%2Fstep_CsWMvxDZLqAA0ExQPkh9.mp4?alt=media&token=130724ff-6e65-4740-a2db-446013a0edd3">
 </video>
 
 ## Wiring Diagram
@@ -50,8 +50,10 @@ RGB stands for red, green, and blue.  It allows you mix those colors to create c
 
 2\. Connect the RGB LED into the breadboard.  
 
+![step](../assets/rgbled/rgb_led.jpeg)
+
 - RED Wire in (27, H)
-- GND Wire in (28, H)
+- GND Wire in (28, H) -- (Longest wire)
 - GREEN Wire in (29, H)
 - BLUE Wire in (30, H)
 

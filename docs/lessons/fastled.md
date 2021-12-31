@@ -1,4 +1,4 @@
-# Fast LEDs
+# RGB LED Light Strip
 
 This lesson page will serve for as the reference for all lessons related the FAST Leds.  It contains how to wire them and what to do.
 
@@ -32,9 +32,9 @@ This lesson page will serve for as the reference for all lessons related the FAS
 
 ## Coding Videos
 
-<!-- <video controls >
-<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FGcym9zmref566fEFWgYy%2Fstep_Vs5B6xqmI07XAXGNCs4n.mp4?alt=media&token=91ccea63-4d80-4b5d-a243-597eaf92ecea">
-</video> -->
+<video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2F3coW8djkjz0fYOPCH4Ib%2Fstep_oREt6y5nMDMdzzJksZ7s.mp4?alt=media&token=56680f2b-2323-4596-9e89-80ca20931f08">
+</video>
 
 ## Steps
 

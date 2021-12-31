@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>RGB LED - ElectroBlocks</title>
+  <title>FastLED - ElectroBlocks</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "RGB LED";
-    var mkdocs_page_input_path = "lessons/rgbled.md";
+    var mkdocs_page_name = "FastLED";
+    var mkdocs_page_input_path = "lessons/fastled.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -71,27 +71,23 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../wave/">Wave Machine</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">RGB LED</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../rgbled/">RGB LED</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">FastLED</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-is-rgb">What is RGB</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#blocks">Blocks</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#coding-video">Coding Video</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#wiring-diagram">Wiring Diagram</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding-videos">Coding Videos</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#challenge">Challenge</a>
-    </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../fastled/">FastLED</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How Tos</span></p>
@@ -126,7 +122,7 @@
         
       
     
-    <li>RGB LED</li>
+    <li>FastLED</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -138,82 +134,55 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="rgb-led">RGB LED</h1>
+                <h1 id="fast-leds">Fast LEDs</h1>
+<p>This lesson page will serve for as the reference for all lessons related the FAST Leds.  It contains how to wire them and what to do.</p>
 <h2 id="what-you-will-learn">What you will learn</h2>
 <ul>
-<li>What RGB stands for</li>
-<li>How to change the color of an RGB LED</li>
-<li>How to fade a from one color to another with an RGB LED</li>
+<li>How to do cool led light patterns</li>
+<li>Advanced loops</li>
+<li>How to create random colors</li>
+<li>How to wire up and rgb led light strip</li>
 </ul>
-<h2 id="what-is-rgb">What is RGB</h2>
-<p>RGB stands for red, green, and blue.  It allows you mix those colors to create custom colors.</p>
-<p><img alt="rgb explained" src="../../assets/rgbled/rgb.gif" /></p>
 <h2 id="bill-of-materials">Bill of Materials</h2>
-<p><img alt="kit" src="../../assets/rgbled/kit.jpeg" /></p>
+<p><img alt="kit" src="../../assets/fastleds/kit.jpeg" /></p>
 <ul>
 <li>1 x <a href="../what-is-an-arduino/">Arduino with cable</a></li>
-<li>1 x <a href="../../addons#breadboard">Breadboard</a></li>
-<li>1 x <a href="../../addons#rgb-led">RGB LED</a></li>
-<li>1 x <a href="../../addons#resistor">Resistors</a> (1000 ohms)</li>
-<li>9 x wires</li>
+<li>1 x <a href="../../addons#rgb-light-strip">RGB LED Light Strip</a></li>
+<li>3 x wires</li>
 </ul>
 <h2 id="blocks">Blocks</h2>
 <ul>
-<li><a href="../../blocks#rgb-led-setup">RGB LED Setup</a></li>
-<li><a href="../../blocks#rgb-set-color">RGB LED Set Color</a></li>
-<li><a href="../../blocks#color-picker">Color Picker</a></li>
-<li><a href="../../blocks#color-exact">Color Exact Block</a></li>
+<li><a href="../../blocks#fastled-setup">FastLED Setup</a></li>
+<li><a href="../../blocks#fastled-set-color">FastLED Change Color</a></li>
 <li><a href="../../blocks/#loop-with">Loop with</a></li>
 <li><a href="../../blocks/#get-variable">Get Variable</a></li>
+<li><a href="../../blocks#wait">Wait</a></li>
+<li><a href="../../blocks#color-picker">Color Picker</a></li>
 </ul>
-<h2 id="coding-video">Coding Video</h2>
-<video controls >
-<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/mgMqiXuPbEdHtr6UoPVbQozFQwD2%2FIqveFJLlpwpp9G5A3bbt%2Fstep_CsWMvxDZLqAA0ExQPkh9.mp4?alt=media&token=130724ff-6e65-4740-a2db-446013a0edd3">
-</video>
-
 <h2 id="wiring-diagram">Wiring Diagram</h2>
-<p><img alt="wiring diagram" src="../../assets/rgbled/wiring-diagram.png" /></p>
+<p><img alt="wiring diagram" src="../../assets/fastleds/wiring-diagram.png" /></p>
+<h2 id="coding-videos">Coding Videos</h2>
+<!-- <video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FGcym9zmref566fEFWgYy%2Fstep_Vs5B6xqmI07XAXGNCs4n.mp4?alt=media&token=91ccea63-4d80-4b5d-a243-597eaf92ecea">
+</video> -->
+
 <h2 id="steps">Steps</h2>
-<p>1. Have the front of the Arduino face towards 1 of the breadboard.</p>
-<p><img alt="step1" src="../../assets/blink/wiring-first-led/step1.png" /></p>
-<p>2. Connect the RGB LED into the breadboard.  </p>
-<p><img alt="step" src="../../assets/rgbled/rgb_led.jpeg" /></p>
+<p>1. Look at RGB LED light strip.  Notice the arrows.  The direction that the arrows point is how the LEDS are numbered. </p>
+<p><img alt="step 1" src="../../assets/fastleds/step1.jpeg" /></p>
+<p>This is how it looks like if each LED were a number:</p>
+<p>1 -&gt; 2 -&gt; 3 -&gt; 4</p>
+<p>Also notice the labels Din, GND, 5v+.</p>
 <ul>
-<li>RED Wire in (27, H)</li>
-<li>GND Wire in (28, H) -- (Longest wire)</li>
-<li>GREEN Wire in (29, H)</li>
-<li>BLUE Wire in (30, H)</li>
+<li>Din -&gt; Mean data in.  This wire controls the data in the rgb led. It will go to an analog pin.</li>
+<li>GND -&gt; Ground</li>
+<li>5v+ -&gt; 5 volts</li>
 </ul>
-<p><img alt="step" src="../../assets/rgbled/step1.jpeg" /></p>
-<p>3. Connect a wire from (27, F) to (27, E).</p>
-<p><img alt="step" src="../../assets/rgbled/step2.jpeg" /></p>
-<p>4. Connect a wire from (28, F) to (28, E).</p>
-<p><img alt="step" src="../../assets/rgbled/step3.jpeg" /></p>
-<p>5. Connect a wire from (29, F) to (29, E).</p>
-<p><img alt="step" src="../../assets/rgbled/step4.jpeg" /></p>
-<p>6. Connect a wire from (30, F) to (30, E).</p>
-<p><img alt="step" src="../../assets/rgbled/step5.jpeg" /></p>
-<p>7. Connect a resistor from (27, D) to (27, B).</p>
-<p><img alt="step" src="../../assets/rgbled/step6.jpeg" /></p>
-<p>8. Connect a resistor from (28, D) to (28, B).</p>
-<p><img alt="step" src="../../assets/rgbled/step7.jpeg" /></p>
-<p>9. Connect a resistor from (30, D) to (30, B).</p>
-<p><img alt="step" src="../../assets/rgbled/step8.jpeg" /></p>
-<p>10. Connect a wire from (27, A) to pin 11 on the Arduino.</p>
-<p><img alt="step" src="../../assets/rgbled/step9.jpeg" /></p>
-<p>11. Connect a wire from (29, A) to pin 10 on the Arduino.</p>
-<p><img alt="step" src="../../assets/rgbled/step10.jpeg" /></p>
-<p>12. Connect a wire from (30, A) to pin 9 on the Arduino.</p>
-<p><img alt="step" src="../../assets/rgbled/step11.jpeg" /></p>
-<p>13. Connect a wire from (28, A) to GND (-) of the breadboard.</p>
-<p><img alt="step" src="../../assets/rgbled/step12.jpeg" /></p>
-<p>14. Connect a wire from - of the breadboard to a GND pin on the Arduino.</p>
-<p><img alt="step" src="../../assets/rgbled/step13.jpeg" /></p>
-<h2 id="challenge">Challenge</h2>
-<ul>
-<li>See if you can send a message to the Arduino and display a color.  An example would be sending "red" and showing red in the RGB LED.</li>
-<li>See if you create another fade.  An example would be purple to blue.</li>
-</ul>
+<p>2. Connect a wire from GND of the LED Light Strip to GND of the Arduino.  Consult you LED Light Strip for GND.</p>
+<p><img alt="step 2" src="../../assets/fastleds/step2.jpeg" /></p>
+<p>3. Connect a wire from 5v+ of the LED Light Strip to Vin of the Arduino.  Consult you LED Light Strip for 5v+.  Vin will supply the max power and will give better performance from my experience.</p>
+<p><img alt="step 3" src="../../assets/fastleds/step3.jpeg" /></p>
+<p>4. Connect a wire from Din of the LED Light Strip to A0 of the Arduino.</p>
+<p><img alt="step 4" src="../../assets/fastleds/step4.jpeg" /></p>
               
             </div>
           </div>
@@ -221,10 +190,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../fastled/" class="btn btn-neutral float-right" title="FastLED">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../howto/saveproject/" class="btn btn-neutral float-right" title="Save Project">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../wave/" class="btn btn-neutral" title="Wave Machine"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../rgbled/" class="btn btn-neutral" title="RGB LED"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -250,10 +219,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../wave/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../rgbled/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../fastled/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../howto/saveproject/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

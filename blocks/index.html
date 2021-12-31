@@ -66,6 +66,10 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#compare">Compare</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fastled-setup">FASTLed Setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fastled-set-color">FASTLed Set Color</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#get-variable">Get Variable</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#if">If</a>
@@ -106,6 +110,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="../lessons/wave/">Wave Machine</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../lessons/rgbled/">RGB LED</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../lessons/fastled/">FastLED</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">How Tos</span></p>
@@ -150,30 +156,43 @@
               
                 <h1 id="blocks">Blocks</h1>
 <h2 id="arduino-message-setup">Arduino Message Setup</h2>
-<p>This block will give the Arduino the ablity to send and recieve messages.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit that a message is being recieved and what that message is in the loop number that the Arduino is currently executing.</p>
+<p>This block will give the Arduino the ability to send and receive messages.  The stuff under the ----------- is for the virtual circuit.  It tells the virtual circuit that a message is being received and what that message is in the loop number that the Arduino is currently executing.</p>
 <p><img alt="message setup block" src="../assets/blocks/message-setup.png" /></p>
 <h2 id="arduino-get-message">Arduino Get Message</h2>
-<p>This block get the message being sent from the computer to the Arduino.</p>
+<p>This block gets the message being sent from the computer to the Arduino.</p>
 <p><img alt="Arduino Get Message" src="../assets/blocks/arduino-get-message.png" /></p>
 <h2 id="button-setup">Button Setup</h2>
-<p>This block will tells the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button 
+<p>This block will tell the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button 
 is pressed or not in the loop that the circuit is running.</p>
 <p><img alt="button setup block" src="../assets/blocks/button_setup_block.png" /></p>
 <h2 id="color-exact">Color Exact</h2>
 <p>The block returns a custom color based on the red, green, and blue numbers you put into the block.</p>
 <p><img alt="color exact block" src="../assets/blocks/color-exact.png" /></p>
 <h2 id="color-picker">Color Picker</h2>
-<p>Returns a custom color based on the color pick in the color picker.</p>
+<p>Returns a custom color based on the color picked in the color picker.</p>
 <p><img alt="color picker block" src="../assets/blocks/color-picker.png" /></p>
 <h2 id="compare">Compare</h2>
-<p>The block will compare the blocks on the right and left.  It will use the option in the middle to make the evaulation.  This block will equal true or false.  If the option is set to "=" it will return true if what is on the right and left side is true.  It it's set to "≠" then what is true if what is on the right and left side are not equal.</p>
+<p>The block will compare the blocks on the right and left.  It will use the option in the middle to make the evaluation.  This block will equal true or false.  If the option is set to "=" it will return true if what is on the right and left side is true.  It it's set to "≠" then what is true if what is on the right and left side are not equal.</p>
 <p><img alt="compare blocks" src="../assets/blocks/compare-blocks.png" />
 <img alt="compare output" src="../assets/blocks/compare-output.png" /></p>
+<h2 id="fastled-setup">FASTLed Setup</h2>
+<p>This block will setup the fast led library.  Here the options:</p>
+<ul>
+<li>Analog Pin -&gt; Sets the data pin that your led light strip is wire to.  The data controls the colors of your LEDs.</li>
+<li>Type -&gt; is the chip name that is used to control your LEDS.  Most of them use WS2811.</li>
+<li>Color Order -&gt; On most neopixels this will be RGB and on cheaper light strips it will be GRB.</li>
+<li>Number of Leds -&gt; Controls the number of leds in strip.  Electroblocks can only simulate 60 leds at this time.</li>
+<li>Brightness:  Controls how bright the leds are.  If you are photographing them I have found 10 to be a good brightness. </li>
+</ul>
+<p><img alt="fast led setup" src="../assets/blocks/fastled-setup.png" /></p>
+<h2 id="fastled-set-color">FASTLed Set Color</h2>
+<p>Change the color for an LED.  The position will start at one in ElectroBlocks.</p>
+<p><img alt="fast led color" src="../assets/blocks/fastled-set-color.png" /></p>
 <h2 id="get-variable">Get Variable</h2>
-<p>A variable is one way you can tell the computer to store something.  The get variable block will get the value that is being stored inside the variable.  </p>
+<p>A variable is one way you can tell the computer to store something.  The get variable block will get the value stored inside the variable.  </p>
 <p><img alt="get variable" src="../assets/blocks/get_variable.png" /></p>
 <h2 id="if">If</h2>
-<p>The block is used to make decisions.  If what is connectted to the if block is true then what is inside the do block will be ran.</p>
+<p>The block is used to make decisions.  If what is connected to the block is true, then what is inside the do block will run.</p>
 <p><img alt="if block" src="../assets/blocks/if_block.png" /></p>
 <h2 id="is-button-pressed">Is Button Pressed</h2>
 <p>This block will return if the button is pressed.</p>
@@ -182,11 +201,11 @@ is pressed or not in the loop that the circuit is running.</p>
 <p>Blocks inside the block will run forever on the actual Arduino.  It will be from top to bottom, and once it reaches the bottom block, it will go back to the top block.  The simulator on the right of the screen will run three times. </p>
 <p><img alt="loop block" src="../assets/blocks/loop.png" /></p>
 <h2 id="loop-with">Loop With</h2>
-<p>This block is used to repeat something over and over again.  It creates a variable often called "i".  It will start i at the from number and will add or subtract the value stored in i until it gets to the to number.  The best way to understand loops in Electroblocks is to play around with them.</p>
+<p>This block is used to repeat something over and over again.  It creates a variable often called "i".  It will start "i" from the number and add or subtract the value stored in "i" until it gets to the to number.  The best way to understand loops in Electroblocks is to play around with them.</p>
 <p><img alt="loop with adding" src="../assets/blocks/loopwith1.png" /></p>
 <p><img alt="loop block subtracting" src="../assets/blocks/loopwith2.png" /></p>
 <h2 id="led">Led</h2>
-<p>The LED block controls whether an led is on or off.  The first drop-down decides which <a href="/lessons/what-is-an-arduino.html#what-are-pins">Arduino Pin</a> the led is connected to.  The second dropdown turns the LED on or off.</p>
+<p>The LED block controls whether an led is on or off.  The first dropdown decides which <a href="/lessons/what-is-an-arduino.html#what-are-pins">Arduino Pin</a> the led is connected to.  The second dropdown turns the LED on or off.</p>
 <p><img alt="loop block" src="../assets/blocks/led.png" /></p>
 <h2 id="rgb-set-color">RGB Set Color</h2>
 <p>Sets the color of the RGB LED.</p>
@@ -195,7 +214,7 @@ is pressed or not in the loop that the circuit is running.</p>
 <p>Sets the wires used in the RGB LED.</p>
 <p><img alt="rgb led setup block" src="../assets/blocks/rgbled-setup.png" /></p>
 <h2 id="servo">Servo</h2>
-<p>The servo controls the data pin that the servo is connectted to and number of degress that you want to rotate the servo.  The higher the number the more the servo will rotate.</p>
+<p>The block controls the data pin that the servo is connected to and the number of degrees that you want to rotate the servo.  The higher the number, the more the servo will rotate.</p>
 <p><img alt="servo block" src="../assets/blocks/servo.png" /></p>
 <h2 id="wait">Wait</h2>
 <p>The wait block will pause the Arduino.</p>

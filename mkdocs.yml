@@ -10,6 +10,7 @@ nav:
       - HighFive Machine: lessons/highfive.md
       - Wave Machine: lessons/wave.md
       - RGB LED: lessons/rgbled.md
+      - FastLED: lessons/fastled.md
   - How Tos:
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md

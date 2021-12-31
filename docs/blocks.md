@@ -4,7 +4,7 @@
 
 
 
-This block will give the Arduino the ablity to send and recieve messages.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit that a message is being recieved and what that message is in the loop number that the Arduino is currently executing.
+This block will give the Arduino the ability to send and receive messages.  The stuff under the ----------- is for the virtual circuit.  It tells the virtual circuit that a message is being received and what that message is in the loop number that the Arduino is currently executing.
 
 ![message setup block](assets/blocks/message-setup.png)
 
@@ -13,7 +13,7 @@ This block will give the Arduino the ablity to send and recieve messages.  The s
 
 
 
-This block get the message being sent from the computer to the Arduino.
+This block gets the message being sent from the computer to the Arduino.
 
 ![Arduino Get Message](assets/blocks/arduino-get-message.png)
 
@@ -21,7 +21,7 @@ This block get the message being sent from the computer to the Arduino.
 
 
 
-This block will tells the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button 
+This block will tell the Arduino which pin to connect the button to.  The stuff under the ----------- is for the virtual circuit.  It's used to tell the virtual circuit whether the button 
 is pressed or not in the loop that the circuit is running.
 
 ![button setup block](assets/blocks/button_setup_block.png)
@@ -36,27 +36,47 @@ The block returns a custom color based on the red, green, and blue numbers you p
 ## Color Picker
 
 
-Returns a custom color based on the color pick in the color picker.
+Returns a custom color based on the color picked in the color picker.
 
 ![color picker block](assets/blocks/color-picker.png)
 
 ## Compare
 
-The block will compare the blocks on the right and left.  It will use the option in the middle to make the evaulation.  This block will equal true or false.  If the option is set to "=" it will return true if what is on the right and left side is true.  It it's set to "≠" then what is true if what is on the right and left side are not equal.
+The block will compare the blocks on the right and left.  It will use the option in the middle to make the evaluation.  This block will equal true or false.  If the option is set to "=" it will return true if what is on the right and left side is true.  It it's set to "≠" then what is true if what is on the right and left side are not equal.
 
 ![compare blocks](assets/blocks/compare-blocks.png)
 ![compare output](assets/blocks/compare-output.png)
 
+## FASTLed Setup 
+
+This block will setup the fast led library.  Here the options:
+
+- Analog Pin -> Sets the data pin that your led light strip is wire to.  The data controls the colors of your LEDs.
+- Type -> is the chip name that is used to control your LEDS.  Most of them use WS2811.
+- Color Order -> On most neopixels this will be RGB and on cheaper light strips it will be GRB.
+- Number of Leds -> Controls the number of leds in strip.  Electroblocks can only simulate 60 leds at this time.
+- Brightness:  Controls how bright the leds are.  If you are photographing them I have found 10 to be a good brightness. 
+
+![fast led setup](assets/blocks/fastled-setup.png)
+
+
+## FASTLed Set Color
+
+Change the color for an LED.  The position will start at one in ElectroBlocks.
+
+![fast led color](assets/blocks/fastled-set-color.png)
+
+
 ## Get Variable 
 
 
-A variable is one way you can tell the computer to store something.  The get variable block will get the value that is being stored inside the variable.  
+A variable is one way you can tell the computer to store something.  The get variable block will get the value stored inside the variable.  
 
 ![get variable](assets/blocks/get_variable.png)
 
 ## If 
 
-The block is used to make decisions.  If what is connectted to the if block is true then what is inside the do block will be ran.
+The block is used to make decisions.  If what is connected to the block is true, then what is inside the do block will run.
 
 ![if block](assets/blocks/if_block.png)
 
@@ -75,7 +95,7 @@ Blocks inside the block will run forever on the actual Arduino.  It will be from
 ## Loop With
 
 
-This block is used to repeat something over and over again.  It creates a variable often called "i".  It will start i at the from number and will add or subtract the value stored in i until it gets to the to number.  The best way to understand loops in Electroblocks is to play around with them.
+This block is used to repeat something over and over again.  It creates a variable often called "i".  It will start "i" from the number and add or subtract the value stored in "i" until it gets to the to number.  The best way to understand loops in Electroblocks is to play around with them.
 
 ![loop with adding](assets/blocks/loopwith1.png)
 
@@ -85,7 +105,7 @@ This block is used to repeat something over and over again.  It creates a variab
 ## Led
 
 
-The LED block controls whether an led is on or off.  The first drop-down decides which [Arduino Pin](/lessons/what-is-an-arduino.html#what-are-pins) the led is connected to.  The second dropdown turns the LED on or off.
+The LED block controls whether an led is on or off.  The first dropdown decides which [Arduino Pin](/lessons/what-is-an-arduino.html#what-are-pins) the led is connected to.  The second dropdown turns the LED on or off.
 
 ![loop block](assets/blocks/led.png)
 
@@ -104,7 +124,7 @@ Sets the wires used in the RGB LED.
 
 ## Servo
 
-The servo controls the data pin that the servo is connectted to and number of degress that you want to rotate the servo.  The higher the number the more the servo will rotate.
+The block controls the data pin that the servo is connected to and the number of degrees that you want to rotate the servo.  The higher the number, the more the servo will rotate.
 
 ![servo block](assets/blocks/servo.png)
 

@@ -32,8 +32,24 @@ This lesson page will serve for as the reference for all lessons related the FAS
 
 ## Coding Videos
 
+
+### Intro
+
 <video controls >
 <source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2F3coW8djkjz0fYOPCH4Ib%2Fstep_oREt6y5nMDMdzzJksZ7s.mp4?alt=media&token=56680f2b-2323-4596-9e89-80ca20931f08">
+</video>
+
+
+### Alternating Patterns
+
+<video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/mgMqiXuPbEdHtr6UoPVbQozFQwD2%2F9eDJTXJfo6a7jfjMSspI%2Fstep_TNOk5AnANvB1769T0z2x.mp4?alt=media&token=777df31f-be1d-4436-ac6c-09fbeec772ea">
+</video>
+
+### Snake
+
+<video controls >
+<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/mgMqiXuPbEdHtr6UoPVbQozFQwD2%2FQD76ElYnxSULlwfHkzGR%2Fstep_KllgmeONWJl9LG0WuhT5.mp4?alt=media&token=3d690256-0576-429d-a766-5c7a9b70dea5">
 </video>
 
 ## Steps

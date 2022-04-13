@@ -50,7 +50,7 @@ RGB stands for red, green, and blue.  It allows you mix those colors to create c
 
 2\. Connect the RGB LED into the breadboard.  
 
-![step](../assets/rgbled/rgb_led.jpeg)
+![step](../assets/rgbled/rgb_led.jpg)
 
 - RED Wire in (27, H)
 - GND Wire in (28, H) -- (Longest wire)
@@ -58,55 +58,39 @@ RGB stands for red, green, and blue.  It allows you mix those colors to create c
 - BLUE Wire in (30, H)
 
 
-![step](../assets/rgbled/step1.jpeg)
+![step](../assets/rgbled/step2.jpg)
 
-3\. Connect a wire from (27, F) to (27, E).
+3\. Connect a resistor from (27, F) to (27, E)
 
-![step](../assets/rgbled/step2.jpeg)
+![step](../assets/rgbled/step3.jpg)
 
-4\. Connect a wire from (28, F) to (28, E).
+4\. Connect a resistor from (29, F) to (29, E).
 
-![step](../assets/rgbled/step3.jpeg)
+![step](../assets/rgbled/step4.jpg)
 
-5\. Connect a wire from (29, F) to (29, E).
-
-![step](../assets/rgbled/step4.jpeg)
-
-6\. Connect a wire from (30, F) to (30, E).
+5\. Connect a resistor from (30, F) to (30, E).
 
 ![step](../assets/rgbled/step5.jpeg)
 
-7\. Connect a resistor from (27, D) to (27, B).
+6\. Connect a wire from (28, E) to GND on the breadboard.
 
-![step](../assets/rgbled/step6.jpeg)
+![step](../assets/rgbled/step6.jpg)
 
-8\. Connect a resistor from (28, D) to (28, B).
+7\. Connect a wire from (27, A) to pin 11 on the Arduino.
 
-![step](../assets/rgbled/step7.jpeg)
+![step](../assets/rgbled/step7.jpg)
 
-9\. Connect a resistor from (30, D) to (30, B).
+8\. Connect a wire from (29, A) to pin 10 on the Arduino.
 
-![step](../assets/rgbled/step8.jpeg)
+![step](../assets/rgbled/step8.jpg)
 
-10\. Connect a wire from (27, A) to pin 11 on the Arduino.
+9\. Connect a wire from (30, A) to pin 9 on the Arduino.
 
-![step](../assets/rgbled/step9.jpeg)
+![step](../assets/rgbled/step9.jpg)
 
-11\. Connect a wire from (29, A) to pin 10 on the Arduino.
+10\. Connect a wire from - of the breadboard to a GND pin on the Arduino.
 
-![step](../assets/rgbled/step10.jpeg)
-
-12\. Connect a wire from (30, A) to pin 9 on the Arduino.
-
-![step](../assets/rgbled/step11.jpeg)
-
-13\. Connect a wire from (28, A) to GND (-) of the breadboard.
-
-![step](../assets/rgbled/step12.jpeg)
-
-14\. Connect a wire from - of the breadboard to a GND pin on the Arduino.
-
-![step](../assets/rgbled/step13.jpeg)
+![step](../assets/rgbled/step10.jpg)
 
 
 ## Challenge

@@ -21,9 +21,7 @@ In this lesson you will build a flappy bird game controller with a Arduino and a
 - 1 x [Touch Sensor](../../addons#Touch-Sensor)
 - 3 x wires
 
-## Slides
-
-https://docs.google.com/presentation/d/1NajQaFKaowK2HvOcsfEApE3_9FElnhDUdM8chXerAbw/edit?usp=sharing
+## [Slides](https://docs.google.com/presentation/d/1NajQaFKaowK2HvOcsfEApE3_9FElnhDUdM8chXerAbw/edit?usp=sharing)
 
 ## Build Steps
 

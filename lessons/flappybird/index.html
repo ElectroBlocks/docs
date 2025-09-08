@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Flappy Bird - ElectroBlocks</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Flappy Bird";
+        var mkdocs_page_input_path = "lessons/flappybird.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> ElectroBlocks
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Getting Started</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../blocks/">Blocks</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../addons/">Addons</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../what-is-an-arduino/">What is an Arduino?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sending-messages/">Sending Messages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive Machine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../wave/">Wave Machine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../rgbled/">RGB LED</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../fastled/">RGB LED Light Strip</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sonar-motion-sensor/">Motion Sensor RGB LED Light Strip</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Flappy Bird</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#slides">Slides</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#build-steps">Build Steps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding-demo">Coding Demo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#flappy-bird-game-connection-demo">Flappy Bird Game Connection Demo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#challenge-make-the-game-playable">Challenge (Make the game playable)</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">How Tos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../howto/saveproject/">Save Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../howto/openproject/">Open Project</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">ElectroBlocks</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">ElectroBlocks Lessons</li>
+      <li class="breadcrumb-item active">Flappy Bird</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="flappy-bird">Flappy Bird</h1>
+<p>In this lesson you will build a flappy bird game controller with a Arduino and a touch sensor.</p>
+<video controls >
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/FlappyBird.MOV">
+</video>
+
+<h2 id="what-you-will-learn">What you will learn</h2>
+<ul>
+<li>How to use a touch sensor</li>
+<li>How to send message to a computer from the Arduino</li>
+<li>How to use an if block</li>
+</ul>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<p><img alt="kit" src="../../assets/flappybird/project.png" /></p>
+<ul>
+<li>1 x <a href="../what-is-an-arduino/">Arduino with cable</a></li>
+<li>1 x <a href="../../addons#Touch-Sensor">Touch Sensor</a></li>
+<li>3 x wires</li>
+</ul>
+<h2 id="slides">Slides</h2>
+<p>https://docs.google.com/presentation/d/1NajQaFKaowK2HvOcsfEApE3_9FElnhDUdM8chXerAbw/edit?usp=sharing</p>
+<h2 id="build-steps">Build Steps</h2>
+<p>1. Connect a jumper wire from the SIG pin of the touch sensor to pin 7 of the Arduno.</p>
+<p><img alt="step 1" src="../../assets/flappybird/step1.png" /></p>
+<p>2. Connect a jumper wire from vcc of the touch sensor to the 3.3v pin of the Arduino</p>
+<p><img alt="step 2" src="../../assets/flappybird/step2.png" /></p>
+<p>3. Connect a jumper wire from gnd of the touch sensor to a gnd pin on the Arduino</p>
+<p><img alt="step 3" src="../../assets/flappybird/step3.png" /></p>
+<h2 id="coding-demo">Coding Demo</h2>
+<p>Flow the video to code and to upload the code.</p>
+<video controls >
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/demo_code.mov">
+</video>
+
+<h2 id="flappy-bird-game-connection-demo">Flappy Bird Game Connection Demo</h2>
+<video controls >
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/demo_game.mov">
+</video>
+
+<p><a href="https://codepen.io/noah-glaser/pen/xbwMObP">Game</a></p>
+<h2 id="challenge-make-the-game-playable">Challenge (Make the game playable)</h2>
+<p>Find this section of the code and play with the variables.</p>
+<pre><code class="language-js">    const G = 0.45;          // gravity
+    const JUMP_V = -3.8;     // jump velocity
+    const PIPE_GAP = 150;    // vertical gap size
+    const PIPE_W = 60;       // pipe width
+    const PIPE_SPACING = 220;// distance between pipes
+    const SCROLL = 2.4;      // world scroll speed
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../sonar-motion-sensor/" class="btn btn-neutral float-left" title="Motion Sensor RGB LED Light Strip"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../howto/saveproject/" class="btn btn-neutral float-right" title="Save Project">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../sonar-motion-sensor/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../howto/saveproject/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

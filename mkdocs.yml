@@ -12,6 +12,7 @@ nav:
       - RGB LED: lessons/rgbled.md
       - RGB LED Light Strip: lessons/fastled.md
       - Motion Sensor RGB LED Light Strip: lessons/sonar-motion-sensor.md
+      - Flappy Bird: lessons/flappybird.md
   - How Tos:
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md

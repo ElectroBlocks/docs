@@ -33,3 +33,9 @@
 ## Servos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E6IqQ39YrCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Touch Sensor
+
+https://projecthub.arduino.cc/hibit/using-touch-sensor-with-arduino-83b957
+
+![Touch Sensor](./assets/flappybird/sensor.png)

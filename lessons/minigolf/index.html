@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Flappy Bird - ElectroBlocks</title>
+    <title>Mini Golf - ElectroBlocks</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Flappy Bird";
-        var mkdocs_page_input_path = "lessons/flappybird.md";
+        var mkdocs_page_name = "Mini Golf";
+        var mkdocs_page_input_path = "lessons/minigolf.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -70,25 +70,19 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../sonar-motion-sensor/">Motion Sensor RGB LED Light Strip</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Flappy Bird</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../flappybird/">Flappy Bird</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Mini Golf</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
+    <li class="toctree-l2"><a class="reference internal" href="#demos">Demos</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#slides">Slides</a>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#build-steps">Build Steps</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#coding-demo">Coding Demo</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#flappy-bird-game-connection-demo">Flappy Bird Game Connection Demo</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#challenge-make-the-game-playable">Challenge (Make the game playable)</a>
-    </li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../minigolf/">Mini Golf</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">How Tos</span></p>
@@ -113,7 +107,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">ElectroBlocks Lessons</li>
-      <li class="breadcrumb-item active">Flappy Bird</li>
+      <li class="breadcrumb-item active">Mini Golf</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -122,60 +116,87 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="flappy-bird">Flappy Bird</h1>
-<p>In this lesson you will build a flappy bird game controller with a Arduino and a touch sensor.</p>
-<video controls >
-<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/FlappyBird.MOV">
-</video>
-
+                <h1 id="mini-golf">Mini Golf</h1>
 <h2 id="what-you-will-learn">What you will learn</h2>
 <ul>
-<li>How to use a touch sensor</li>
-<li>How to send message to a computer from the Arduino</li>
-<li>How to use an if block</li>
+<li>How use an IR motion sensoe</li>
+<li>How to make an Arduino respond when something happens</li>
+<li>If Blocks</li>
+<li>How to use a servo</li>
 </ul>
+<h2 id="demos">Demos</h2>
+<video controls >
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/mini-golf/demo.mp4">
+</video>
+
 <h2 id="bill-of-materials">Bill of Materials</h2>
-<p><img alt="kit" src="../../assets/flappybird/project.png" /></p>
+<p><img alt="kit" src="../../assets/mini-golf/kit.png" /></p>
 <ul>
 <li>1 x <a href="../what-is-an-arduino/">Arduino with cable</a></li>
-<li>1 x <a href="../../addons#Touch-Sensor">Touch Sensor</a></li>
-<li>3 x wires</li>
+<li>1 x Servo</li>
+<li>1 x IR Sensor</li>
+<li>1 x Small Box</li>
+<li>1 x Pingpong ball</li>
+<li>6 x wires</li>
 </ul>
-<h2 id="slides"><a href="https://docs.google.com/presentation/d/1NajQaFKaowK2HvOcsfEApE3_9FElnhDUdM8chXerAbw/edit?usp=sharing">Slides</a></h2>
 <h2 id="build-steps">Build Steps</h2>
-<p>1. Connect a jumper wire from the SIG pin of the touch sensor to pin 7 of the Arduno.</p>
-<p><img alt="step 1" src="../../assets/flappybird/step1.png" /></p>
-<p>2. Connect a jumper wire from vcc of the touch sensor to the 3.3v pin of the Arduino</p>
-<p><img alt="step 2" src="../../assets/flappybird/step2.png" /></p>
-<p>3. Connect a jumper wire from gnd of the touch sensor to a gnd pin on the Arduino</p>
-<p><img alt="step 3" src="../../assets/flappybird/step3.png" /></p>
-<h2 id="coding-demo">Coding Demo</h2>
-<p>Flow the video to code and to upload the code.</p>
+<p>1. Connect a jumper wire from the Orange wire of the servo to pin 7 of the Arduino.</p>
+<p><img alt="step 1" src="../../assets/mini-golf/step1.png" /></p>
+<p>2. Connect a jumper wire from the Red wire of the servo to pin 5v of the Arduino.</p>
+<p><img alt="step 2" src="../../assets/mini-golf/step2.png" /></p>
+<p>3. Connect a jumper wire from the brown wire of the servo to one of the GND pins on the Arduino.</p>
+<p><img alt="step 3" src="../../assets/mini-golf/step3.png" /></p>
+<p>4. Connect a jumper wire from the out pin of the ir motion sensor to pin 8 of the Arduino.</p>
+<p><img alt="step 4" src="../../assets/mini-golf/step4.png" /></p>
+<p>5. Connect a jumper wire from the GND pin of the ir motion sensor to pin GND of the Arduino.</p>
+<p><img alt="step 5" src="../../assets/mini-golf/step5.png" /></p>
+<p>6. Connect a jumper wire from the VCC pin of the ir motion sensor to pin 3.3v of the Arduino.</p>
+<p><img alt="step 6" src="../../assets/mini-golf/step6.png" /></p>
+<p>7. Write the code and make sure the servo moves when you put something in front of it.</p>
 <video controls >
-<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/demo_code.mov">
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/mini-golf/step-7-coding.mp4">
 </video>
 
-<h2 id="flappy-bird-game-connection-demo">Flappy Bird Game Connection Demo</h2>
+<p>8. Take your box and lay it open on the table.</p>
+<p><img alt="step 8" src="../../assets/mini-golf/step8-box.png" /></p>
+<p>9. Tape up the sides of the box.</p>
+<p><img alt="step 9" src="../../assets/mini-golf/step9-tape-sides.png" /></p>
+<p>10. Cut hole into box so that the pingpong ball can fit into it.</p>
+<p><img alt="step 10" src="../../assets/mini-golf/step10-cut-whole-in-box.png" /></p>
+<p>11. Cut a flap in the box for the servo.</p>
+<p><img alt="step 10" src="../../assets/mini-golf/step-10-cut-flap.png" /></p>
+<p>12. Tape the servo motor to the flap and use way more tape than what is in the picture.</p>
+<p><img alt="step 11" src="../../assets/mini-golf/step11-attach-servo-use-more-tape.png" /></p>
+<p>13. Test the servo motor and ensure that it works.</p>
 <video controls >
-<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/demo_game.mov">
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/mini-golf/step12-test-servo.mp4">
 </video>
 
-<p><a href="https://codepen.io/noah-glaser/pen/xbwMObP">Game</a></p>
-<h2 id="challenge-make-the-game-playable">Challenge (Make the game playable)</h2>
-<p>Find this section of the code and play with the variables.</p>
-<pre><code class="language-js">    const G = 0.45;          // gravity
-    const JUMP_V = -3.8;     // jump velocity
-    const PIPE_GAP = 150;    // vertical gap size
-    const PIPE_W = 60;       // pipe width
-    const PIPE_SPACING = 220;// distance between pipes
-    const SCROLL = 2.4;      // world scroll speed
-</code></pre>
+<p>14. Attach the sensor to the box so that it is pointing up at the whole.</p>
+<p><img alt="step 13" src="../../assets/mini-golf/step13-attach-sensor.png" /></p>
+<p>15. Test out the step and make sure it works with the ball.</p>
+<video controls >
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/mini-golf/step14-test-setup.mp4">
+</video>
+
+<p>16. Create the flag</p>
+<p><img alt="step 16" src="../../assets/mini-golf/step16-create-flag.png" /></p>
+<p>17. Attach the flag to the wooden dowel.</p>
+<p><img alt="step 17" src="../../assets/mini-golf/step17-attach-flag.png" /></p>
+<p>18. Attach plastic servo horn to the wooden dowel.  Besure the it is facing the correct way so that when the flag up you see the front of it.</p>
+<p><img alt="step 18" src="../../assets/mini-golf/step18-attach-servo-horn.png" /></p>
+<p>18. Tape the sides and bottom ramp of the box.</p>
+<p><img alt="step 19" src="../../assets/mini-golf/step15-tape-sides-bottom.png" /></p>
+<p>19. Test it out.</p>
+<video controls >
+<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/mini-golf/final_project.mp4">
+</video>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../sonar-motion-sensor/" class="btn btn-neutral float-left" title="Motion Sensor RGB LED Light Strip"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../minigolf/" class="btn btn-neutral float-right" title="Mini Golf">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../flappybird/" class="btn btn-neutral float-left" title="Flappy Bird"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../howto/saveproject/" class="btn btn-neutral float-right" title="Save Project">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -198,10 +219,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../sonar-motion-sensor/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../flappybird/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../minigolf/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../howto/saveproject/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

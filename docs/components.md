@@ -42,6 +42,14 @@ Holes are connected internally in rows and columns
 
 Side rails are commonly used for power and ground
 
+## Resistor
+
+A resistor is a small component that limits how much electricity can flow through a circuit.
+
+### Pins
+
+- It does not matter which side you plug a resistor into.
+
 ## Jumper Wires
 
 Used to connect components together.

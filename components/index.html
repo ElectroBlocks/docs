@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Components - ElectroBlocks</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Components";
+        var mkdocs_page_input_path = "components.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> ElectroBlocks
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Getting Started</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../blocks/">Blocks</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../addons.md">Addons</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ElectroBlocks Lessons</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/what-is-an-arduino/">What is an Arduino?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/blink/">Blink</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/sending-messages/">Sending Messages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/highfive/">HighFive Machine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/wave/">Wave Machine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/rgbled/">RGB LED</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/fastled/">RGB LED Light Strip</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/sonar-motion-sensor/">Motion Sensor RGB LED Light Strip</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/flappybird/">Flappy Bird</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lessons/minigolf/">Mini Golf</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">How Tos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../howto/saveproject/">Save Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../howto/openproject/">Open Project</a>
+                  </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Components</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#arduino">Arduino</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins">Pins</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#types-of-pins-important">Types of Pins (Important)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#breadboard">Breadboard</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#holes">Holes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#jumper-wires">Jumper Wires</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#types">Types</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bluetooth-module">Bluetooth Module</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_1">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#digital-display-tm1637">Digital Display (TM1637)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_2">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rgb-led-light-strip-fastled">RGB LED Light Strip (FastLED)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_3">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lcd-screen-i2c">LCD Screen (I2C)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_4">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#led">LED</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_5">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#led-matrix-max7219">LED Matrix (MAX7219)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_6">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#motor-l298-driver">Motor (L298 Driver)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_7">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#passive-buzzer">Passive Buzzer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_8">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rgb-led">RGB LED</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_9">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#servo-motor">Servo Motor</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_10">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stepper-motor">Stepper Motor</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_11">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#analog-sensor-general">Analog Sensor (General)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_12">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#photo-resistor-light-sensor">Photo Resistor (Light Sensor)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_13">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#potentiometer">Potentiometer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_14">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#push-button">Push Button</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_15">Pins</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#touch-sensor">Touch Sensor</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pins_16">Pins</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">ElectroBlocks</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Components</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="component-glossary">Component Glossary</h1>
+<h2 id="arduino">Arduino</h2>
+<p>The Arduino is a small computer that runs your program and controls all connected components.</p>
+<p><img alt="Arduino" src="../assets/components/arduino.png" /></p>
+<h3 id="pins">Pins</h3>
+<p>Pins are pieces of metal are connected to an electrical component.</p>
+<p><img alt="Arduino" src="../assets/components/arduino-pins.png" /></p>
+<h3 id="types-of-pins-important">Types of Pins (Important)</h3>
+<p>Input pins listen for information from sensors or buttons</p>
+<p>Output pins send instructions to lights, motors, or displays</p>
+<p>Power pins supply electricity and do not send information</p>
+<ul>
+<li>Digital Pins (0–13):</li>
+<li>Can be input (buttons, sensors) or output (LEDs, buzzers)</li>
+<li>Analog Pins (A0–A5):</li>
+<li>Used as input to read changing values like light or temperature</li>
+<li>5V / 3.3V: Power</li>
+<li>GND: Ground (return path for electricity)</li>
+</ul>
+<h2 id="breadboard">Breadboard</h2>
+<p>A breadboard lets you build circuits without soldering.</p>
+<p><img alt="Arduino" src="../assets/components/breadboard.png" /></p>
+<h3 id="holes">Holes</h3>
+<p>Holes are connected internally in rows and columns</p>
+<p>Side rails are commonly used for power and ground</p>
+<h2 id="jumper-wires">Jumper Wires</h2>
+<p>Used to connect components together.</p>
+<p><img alt="jumperwire" src="../assets/components/jumperwire.png" /></p>
+<h3 id="types">Types</h3>
+<ul>
+<li>Male to Male: Arduino to breadboard</li>
+<li>Male to Female: Arduino to sensor</li>
+<li>Female to Female: Sensor to sensor</li>
+</ul>
+<h2 id="bluetooth-module">Bluetooth Module</h2>
+<p>Allows wireless communication with a phone or computer.</p>
+<p><img alt="bluetooth" src="../assets/components/bluetooth_front.png" /></p>
+<h3 id="pins_1">Pins</h3>
+<p><img alt="bluetooth" src="../assets/components/bluetooth_back.png" /></p>
+<ul>
+<li>TX (Output): Sends data from the module</li>
+<li>RX (Input): Receives data from Arduino</li>
+<li>VCC: Power</li>
+<li>GND: Ground</li>
+</ul>
+<h2 id="digital-display-tm1637">Digital Display (TM1637)</h2>
+<p>Shows numbers such as timers or counters.</p>
+<p><img alt="digitaldisplay front" src="../assets/components/digitaldisplay_front.png" /></p>
+<h3 id="pins_2">Pins</h3>
+<p><img alt="digitaldisplay back" src="../assets/components/digitaldisplay_back.png" /></p>
+<ul>
+<li>CLK (Input): Clock signal from Arduino</li>
+<li>DIO (Input): Data from Arduino</li>
+<li>VCC: Power</li>
+<li>GND: Ground</li>
+</ul>
+<h2 id="rgb-led-light-strip-fastled">RGB LED Light Strip (FastLED)</h2>
+<p>A strip of LEDs where each light can show a different color.</p>
+<p><img alt="rgb light strip" src="../assets/components/rainbow.jpg" /></p>
+<h3 id="pins_3">Pins</h3>
+<p><img alt="rgb light strip" src="../assets/components/rgb_light_strip_pins.png" /></p>
+<ul>
+<li>DATA (Input) (Green): Color instructions from Arduino</li>
+<li>5V (Red): Power</li>
+<li>GND (White or Black): Ground</li>
+</ul>
+<h2 id="lcd-screen-i2c">LCD Screen (I2C)</h2>
+<p>Displays text using only two data wires.</p>
+<p><img alt="lcd pins" src="../assets/components/lcd_front.gif" /></p>
+<h3 id="pins_4">Pins</h3>
+<p><img alt="lcd pins" src="../assets/components/lcd_back.jpg" /></p>
+<ul>
+<li>SDA (Input): Data from Arduino</li>
+<li>SCL (Input): Clock from Arduino</li>
+<li>VCC: Power</li>
+<li>GND: Ground</li>
+</ul>
+<h2 id="led">LED</h2>
+<p>A single light.  (Light Emitting Diode).  It only allows electricity to flow in one direction.</p>
+<p><img alt="led" src="../assets/components/led.jpg" /></p>
+<h3 id="pins_5">Pins</h3>
+<ul>
+<li>The long pin or wire connected to the LED.  Used to turn the led on.</li>
+<li>GND (Ground) The short wire connected to the pin.</li>
+</ul>
+<h2 id="led-matrix-max7219">LED Matrix (MAX7219)</h2>
+<p>A grid of LEDs used to draw.</p>
+<p><img alt="led matrix" src="../assets/components/ledmatrix_front.png" /></p>
+<h3 id="pins_6">Pins</h3>
+<ul>
+<li>DIN (Input): Data from Arduino</li>
+<li>CLK (Input): Clock</li>
+<li>CS (Input): Chip select</li>
+<li>VCC: Power</li>
+<li>GND: Ground</li>
+</ul>
+<h2 id="motor-l298-driver">Motor (L298 Driver)</h2>
+<p>Controls DC motors safely.</p>
+<p><img alt="l298" src="../assets/components/motor.png" /></p>
+<h3 id="pins_7">Pins</h3>
+<p><img alt="l298" src="../assets/components/l298N.png" /></p>
+<ul>
+<li>IN1 / IN2 (Input): Direction control</li>
+<li>ENA (Input): Speed control</li>
+<li>Motor Outputs: Connect to motor</li>
+<li>Power / GND: Motor power</li>
+</ul>
+<h2 id="passive-buzzer">Passive Buzzer</h2>
+<p>Makes sound when controlled by Arduino.</p>
+<p><img alt="l298" src="../assets/components/passive_buzzer_pin.png" /></p>
+<h3 id="pins_8">Pins</h3>
+<ul>
+<li>Signal (Input): Sound control (Find the + icon circled in red)</li>
+<li>GND: Ground</li>
+</ul>
+<h2 id="rgb-led">RGB LED</h2>
+<p>A single LED that can display many colors.</p>
+<p><img alt="rgb led" src="../assets/components/rgb_led.jpg" /></p>
+<h3 id="pins_9">Pins</h3>
+<ul>
+<li>R (Input): Red control</li>
+<li>G (Input): Green control</li>
+<li>B (Input): Blue control</li>
+<li>Common: Power or Ground</li>
+</ul>
+<h2 id="servo-motor">Servo Motor</h2>
+<p>Moves to a specific angle.</p>
+<p><img alt="servo" src="../assets/components/servo.png" /></p>
+<h3 id="pins_10">Pins</h3>
+<p><img alt="servo" src="../assets/components/servo_wire.png" /></p>
+<ul>
+<li>Signal (Input): Angle control (Orange or Yellow)</li>
+<li>Power: (Red)</li>
+<li>GND: (Brown)</li>
+</ul>
+<h2 id="stepper-motor">Stepper Motor</h2>
+<p>Moves in precise steps.</p>
+<p><img alt="stepper motor" src="../assets/components/stepper.png" /></p>
+<h3 id="pins_11">Pins</h3>
+<ul>
+<li>Multiple input pins connect to a driver</li>
+<li>Driver connects to Arduino output pins</li>
+<li>Separate power for the motor</li>
+</ul>
+<h2 id="analog-sensor-general">Analog Sensor (General)</h2>
+<p>Returns a range of values, not just on or off.</p>
+<p><img alt="stepper motor" src="../assets/components/analog_gas_sensor.png" /></p>
+<h3 id="pins_12">Pins</h3>
+<ul>
+<li>Signal (Output): Sends value to Arduino</li>
+<li>VCC: Power</li>
+<li>GND: Ground</li>
+</ul>
+<h2 id="photo-resistor-light-sensor">Photo Resistor (Light Sensor)</h2>
+<p>Detects how bright the environment is.</p>
+<h3 id="pins_13">Pins</h3>
+<ul>
+<li>Two legs used with a resistor</li>
+<li>Output goes to an analog input</li>
+</ul>
+<h2 id="potentiometer">Potentiometer</h2>
+<h3 id="pins_14">Pins</h3>
+<ul>
+<li>Middle (Output): Value to Arduino</li>
+<li>Side Pins: Power and Ground</li>
+</ul>
+<h2 id="push-button">Push Button</h2>
+<p>Detects when it is pressed.</p>
+<h3 id="pins_15">Pins</h3>
+<ul>
+<li>One pin goes to ground</li>
+<li>The other goes to a pin on the arduino.</li>
+</ul>
+<h2 id="touch-sensor">Touch Sensor</h2>
+<p>Detects when touched.</p>
+<h3 id="pins_16">Pins</h3>
+<ul>
+<li>Signal (Output): Touch detected</li>
+<li>VCC: Power</li>
+<li>GND: Ground</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../howto/openproject/" class="btn btn-neutral float-left" title="Open Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../howto/openproject/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

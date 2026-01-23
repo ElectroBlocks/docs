@@ -254,3 +254,72 @@ Detects when touched.
 - VCC: Power
 - GND: Ground
 
+## IR Motion Sensor
+
+Detects movement.
+
+### Pins
+
+- OUT (Output): Motion detected
+- VCC: Power
+- GND: Ground
+
+## IR Remote Receiver
+
+### Pins
+
+- Signal (Output): Button data
+- VCC: Power
+- GND: Ground
+
+## Joystick
+
+Used for directional control.
+
+### Pins
+
+- AX (Output): Left / Right
+- AY (Output): Up / Down
+- SW (Output): Button press
+- VCC: Power
+- GND: Ground
+
+## Ultrasonic Sensor
+
+Measures distance using sound.
+
+### Pins
+
+- Trig (Input): Arduino sends sound
+- Echo (Output): Distance signal
+- VCC: Power
+- GND: Ground
+
+## RFID (RDM630)
+
+Reads RFID cards or key fobs.
+
+### Pins
+
+- TX (Output): Tag number
+- VCC: Power
+- GND: Ground
+
+## Temperature Sensor (DHT)
+
+Measures temperature and humidity.
+
+### Pins
+
+- Data (Output): Sensor readings
+- VCC: Power
+- GND: Ground
+
+## Thermistor (Standard)
+
+Measures temperature using resistance.
+
+### Pins
+
+- Two legs used in a voltage divider
+- Output read by an analog input

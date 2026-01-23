@@ -2,7 +2,8 @@ site_name: ElectroBlocks
 nav:
   - Getting Started: index.md
   - Blocks: blocks.md
-  - Addons: addons.md
+  - Addons:
+    - Digital Display:
   - ElectroBlocks Lessons:
       - What is an Arduino?: lessons/what-is-an-arduino.md
       - Blink: lessons/blink.md
@@ -17,6 +18,7 @@ nav:
   - How Tos:
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md
+  - Component: components.md
 theme:
   name: readthedocs
 extra_css:

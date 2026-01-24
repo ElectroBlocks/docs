@@ -199,6 +199,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#rfid-rdm630">RFID (RDM630)</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rfid-fob-example">RFID Fob Example</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#pins_22">Pins</a>
     </li>
         </ul>
@@ -298,6 +300,7 @@
 <p>Side rails are commonly used for power and ground</p>
 <h2 id="resistor">Resistor</h2>
 <p>A resistor is a small component that limits how much electricity can flow through a circuit.</p>
+<p><img alt="Arduino" src="../assets/components/resistors.jpg" /></p>
 <h3 id="pins_1">Pins</h3>
 <ul>
 <li>It does not matter which side you plug a resistor into.</li>
@@ -423,7 +426,7 @@
 </ul>
 <h2 id="analog-sensor-general">Analog Sensor (General)</h2>
 <p>Returns a range of values, not just on or off.</p>
-<p><img alt="stepper motor" src="../assets/components/analog_gas_sensor.png" /></p>
+<p><img alt="gas sensor" src="../assets/components/analog_gas_sensor.png" /></p>
 <h3 id="pins_13">Pins</h3>
 <ul>
 <li>Signal (Output): Sends value to Arduino</li>
@@ -432,12 +435,16 @@
 </ul>
 <h2 id="photo-resistor-light-sensor">Photo Resistor (Light Sensor)</h2>
 <p>Detects how bright the environment is.</p>
+<p><img alt="photo resistor" src="../assets/components/photoresistor_front.png" /></p>
+<p><img alt="photo resistor" src="../assets/components/photo_resistor.png" /></p>
 <h3 id="pins_14">Pins</h3>
 <ul>
 <li>Two legs used with a resistor</li>
 <li>Output goes to an analog input</li>
 </ul>
 <h2 id="potentiometer">Potentiometer</h2>
+<p><img alt="Potentiometer" src="../assets/components/potentiometer_top.png" /></p>
+<p><img alt="Potentiometer" src="../assets/components/potentiometer_bottom.png" /></p>
 <h3 id="pins_15">Pins</h3>
 <ul>
 <li>Middle (Output): Value to Arduino</li>
@@ -445,6 +452,8 @@
 </ul>
 <h2 id="push-button">Push Button</h2>
 <p>Detects when it is pressed.</p>
+<p><img alt="push button" src="../assets/components/push_button.png" /></p>
+<p><img alt="push button" src="../assets/components/push_button_2.png" /></p>
 <h3 id="pins_16">Pins</h3>
 <ul>
 <li>One pin goes to ground</li>
@@ -452,6 +461,7 @@
 </ul>
 <h2 id="touch-sensor">Touch Sensor</h2>
 <p>Detects when touched.</p>
+<p><img alt="Touch Sensor" src="../assets/components/touch_sensor.png" /></p>
 <h3 id="pins_17">Pins</h3>
 <ul>
 <li>Signal (Output): Touch detected</li>
@@ -460,6 +470,7 @@
 </ul>
 <h2 id="ir-motion-sensor">IR Motion Sensor</h2>
 <p>Detects movement.</p>
+<p><img alt="Touch Sensor" src="../assets/components/ir_motion_sensor.png" /></p>
 <h3 id="pins_18">Pins</h3>
 <ul>
 <li>OUT (Output): Motion detected</li>
@@ -467,6 +478,8 @@
 <li>GND: Ground</li>
 </ul>
 <h2 id="ir-remote-receiver">IR Remote Receiver</h2>
+<p>Receives commands from a remote.</p>
+<p><img alt="IR Remote" src="../assets/components/ir_remote.png" /></p>
 <h3 id="pins_19">Pins</h3>
 <ul>
 <li>Signal (Output): Button data</li>
@@ -475,6 +488,7 @@
 </ul>
 <h2 id="joystick">Joystick</h2>
 <p>Used for directional control.</p>
+<p><img alt="JoyStick" src="../assets/components/joystick.png" /></p>
 <h3 id="pins_20">Pins</h3>
 <ul>
 <li>AX (Output): Left / Right</li>
@@ -485,6 +499,7 @@
 </ul>
 <h2 id="ultrasonic-sensor">Ultrasonic Sensor</h2>
 <p>Measures distance using sound.</p>
+<p><img alt="motion sensor" src="../assets/components/motion_sensor.png" /></p>
 <h3 id="pins_21">Pins</h3>
 <ul>
 <li>Trig (Input): Arduino sends sound</li>
@@ -494,7 +509,12 @@
 </ul>
 <h2 id="rfid-rdm630">RFID (RDM630)</h2>
 <p>Reads RFID cards or key fobs.</p>
+<p><img alt="rfid" src="../assets/components/RFID.png" /></p>
+<h3 id="rfid-fob-example">RFID Fob Example</h3>
+<p><img alt="rfid" src="../assets/components/rfid_fob.png" /></p>
 <h3 id="pins_22">Pins</h3>
+<p><img alt="rfid pins" src="../assets/components/rfid_pins.png" /></p>
+<p>Look at the electroblock</p>
 <ul>
 <li>TX (Output): Tag number</li>
 <li>VCC: Power</li>
@@ -502,6 +522,7 @@
 </ul>
 <h2 id="temperature-sensor-dht">Temperature Sensor (DHT)</h2>
 <p>Measures temperature and humidity.</p>
+<p><img alt="dht" src="../assets/components/dht_temp.png" /></p>
 <h3 id="pins_23">Pins</h3>
 <ul>
 <li>Data (Output): Sensor readings</li>
@@ -510,6 +531,7 @@
 </ul>
 <h2 id="thermistor-standard">Thermistor (Standard)</h2>
 <p>Measures temperature using resistance.</p>
+<p><img alt="dht" src="../assets/components/thermistor.png" /></p>
 <h3 id="pins_24">Pins</h3>
 <ul>
 <li>Two legs used in a voltage divider</li>

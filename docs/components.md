@@ -46,6 +46,9 @@ Side rails are commonly used for power and ground
 
 A resistor is a small component that limits how much electricity can flow through a circuit.
 
+![Arduino](./assets/components/resistors.jpg)
+
+
 ### Pins
 
 - It does not matter which side you plug a resistor into.
@@ -219,7 +222,7 @@ Moves in precise steps.
 
 Returns a range of values, not just on or off.
 
-![stepper motor](./assets/components/analog_gas_sensor.png)
+![gas sensor](./assets/components/analog_gas_sensor.png)
 
 ### Pins
 
@@ -231,12 +234,21 @@ Returns a range of values, not just on or off.
 
 Detects how bright the environment is.
 
+![photo resistor](./assets/components/photoresistor_front.png)
+
+![photo resistor](./assets/components/photo_resistor.png)
+
 ### Pins
 
 - Two legs used with a resistor
 - Output goes to an analog input
 
 ## Potentiometer
+
+![Potentiometer](./assets/components/potentiometer_top.png)
+
+![Potentiometer](./assets/components/potentiometer_bottom.png)
+
 
 ### Pins
 
@@ -247,6 +259,10 @@ Detects how bright the environment is.
 
 Detects when it is pressed.
 
+![push button](./assets/components/push_button.png)
+
+![push button](./assets/components/push_button_2.png)
+
 ### Pins
 
 - One pin goes to ground
@@ -255,6 +271,9 @@ Detects when it is pressed.
 ## Touch Sensor
 
 Detects when touched.
+
+![Touch Sensor](./assets/components/touch_sensor.png)
+
 
 ### Pins
 
@@ -266,6 +285,8 @@ Detects when touched.
 
 Detects movement.
 
+![Touch Sensor](./assets/components/ir_motion_sensor.png)
+
 ### Pins
 
 - OUT (Output): Motion detected
@@ -273,6 +294,10 @@ Detects movement.
 - GND: Ground
 
 ## IR Remote Receiver
+
+Receives commands from a remote.
+
+![IR Remote](./assets/components/ir_remote.png)
 
 ### Pins
 
@@ -283,6 +308,8 @@ Detects movement.
 ## Joystick
 
 Used for directional control.
+
+![JoyStick](./assets/components/joystick.png)
 
 ### Pins
 
@@ -296,6 +323,9 @@ Used for directional control.
 
 Measures distance using sound.
 
+![motion sensor](./assets/components/motion_sensor.png)
+
+
 ### Pins
 
 - Trig (Input): Arduino sends sound
@@ -307,7 +337,18 @@ Measures distance using sound.
 
 Reads RFID cards or key fobs.
 
+![rfid](./assets/components/RFID.png)
+
+### RFID Fob Example
+
+![rfid](./assets/components/rfid_fob.png)
+
+
 ### Pins
+
+![rfid pins](./assets/components/rfid_pins.png)
+
+Look at the electroblock
 
 - TX (Output): Tag number
 - VCC: Power
@@ -316,6 +357,9 @@ Reads RFID cards or key fobs.
 ## Temperature Sensor (DHT)
 
 Measures temperature and humidity.
+
+![dht](./assets/components/dht_temp.png)
+
 
 ### Pins
 
@@ -326,6 +370,8 @@ Measures temperature and humidity.
 ## Thermistor (Standard)
 
 Measures temperature using resistance.
+
+![dht](./assets/components/thermistor.png)
 
 ### Pins
 

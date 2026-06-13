@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Sending Messages - ElectroBlocks</title>
+    <title>LCD Screen - ElectroBlocks</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Sending Messages";
-        var mkdocs_page_input_path = "lessons/sending-messages.md";
+        var mkdocs_page_name = "LCD Screen";
+        var mkdocs_page_input_path = "lessons/lcd_screens.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -58,23 +58,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Sending Messages</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#blocks">Blocks</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#coding-video">Coding Video</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#wiring-diagram">Wiring Diagram</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#challenge">Challenge</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../sending-messages/">Sending Messages</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../highfive/">HighFive Machine</a>
                   </li>
@@ -90,7 +74,25 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../minigolf/">Mini Golf</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../lcd_screens/">LCD Screen</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">LCD Screen</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#game-plan">Game Plan!</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-an-lcd-screen">What is an LCD Screen.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#wiring">Wiring</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#print-something-code">Print Something Code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#challenges">Challenges</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#final-project">Final Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#website-for-the-code">Website for the code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#complete-code">Complete Code</a>
+    </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">How Tos</span></p>
@@ -115,7 +117,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">ElectroBlocks Lessons</li>
-      <li class="breadcrumb-item active">Sending Messages</li>
+      <li class="breadcrumb-item active">LCD Screen</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -124,46 +126,79 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="sending-messages">Sending Messages</h1>
-<h2 id="what-you-will-learn">What you will learn</h2>
+                <h1 id="lcd-screens">LCD Screens</h1>
+<h2 id="game-plan">Game Plan!</h2>
 <ul>
-<li>How to send messages to an Arduino</li>
-<li>How to write code to respond to thoses messages to control an LED</li>
+<li>How to control and LCD Screen with an Arduino</li>
+<li>Some fun challenges.</li>
+<li>Control the LCD screen from a website.</li>
 </ul>
-<h2 id="bill-of-materials">Bill of Materials</h2>
-<p><img alt="kit" src="../../assets/blink/kit.jpg" /></p>
-<ul>
-<li>1 x <a href="../what-is-an-arduino/">Arduino with cable</a></li>
-<li>1 x <a href="../../addons#breadboard">Breadboard</a></li>
-<li>1 x <a href="../../addons#led">Leds</a></li>
-<li>1 x <a href="../../addons#resistor">Resistors</a> (100 - 400 ohms)</li>
-<li>4 x wires</li>
-</ul>
-<h2 id="blocks">Blocks</h2>
-<ul>
-<li><a href="../../blocks#arduino-message-setup">Arduino Message Setup</a></li>
-<li><a href="../../blocks#arduino-get-message">Arduino Get Message</a></li>
-<li><a href="../../blocks#compare">Compare Block</a></li>
-<li><a href="../../blocks#if">If</a></li>
-<li><a href="../../blocks#led">Led</a></li>
-</ul>
-<h2 id="coding-video">Coding Video</h2>
+<h2 id="what-is-an-lcd-screen">What is an LCD Screen.</h2>
+<p>An LCD screen is a small display that can show words, numbers, and simple messages from an Arduino.</p>
+<p><img alt="lcd screen" src="../../assets/lcd_screen/lcd_screen.png" /></p>
+<p>Our LCD screen has 4 pins on the back of it.  A pin is a piece of metal connect to electric device.</p>
+<p><img alt="lcd" src="../../assets/lcd_screen/lcd_screen_pins.png" /></p>
+<h2 id="wiring">Wiring</h2>
+<p>Connect 4 jumper wires from the Arduino to the lcd screen.  </p>
+<table>
+<thead>
+<tr>
+<th>Arduino Pin</th>
+<th>LCD Screen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A5</td>
+<td>SCL</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>SDA</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>5v</td>
+<td>VCC</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="wiring pic 1" src="../../assets/lcd_screen/wire_1.png" /></p>
+<p><img alt="wiring pic 2" src="../../assets/lcd_screen/wire_2.png" /></p>
+<h2 id="print-something-code">Print Something Code</h2>
 <video controls >
-<source src="https://firebasestorage.googleapis.com/v0/b/inapp-tutorial.appspot.com/o/electroblocks-org%2FV6DvaFUt1LsXJoNCkBEe%2Fstep_BG5g6G5DbxCUt8JjV63E.mp4?alt=media&token=e73ddfd7-3c0d-4964-bcee-383cc62f0562">
+<source src="https://storage.googleapis.com/electroblocks/lessons/lcd_screen/lcd_code_simple_print.mp4">
 </video>
 
-<h2 id="wiring-diagram">Wiring Diagram</h2>
-<p><img alt="wiring diagram" src="../../assets/sending-messages/wiring-diagram.png" /></p>
-<h2 id="steps">Steps</h2>
-<p>The steps for sending message are the same steps for wiring the first led in <a href="../blink/#steps-first-led">blink lesson</a>.</p>
-<h2 id="challenge">Challenge</h2>
-<p>See if you can wire up another LED and come up with a message that can make it go on and off.</p>
+<h2 id="challenges">Challenges</h2>
+<p>In this challenge you will make the "Hi" on the screen go back and forth.  Close your current electroblocks window.  Then open a new tab, with this <a href="https://electroblocks.org?example_project=lcd_lesson_move_challenge.xml">link</a>.</p>
+<ul>
+<li>
+<p>Can you make the word hi on the lcd screen go the end of the screen?</p>
+</li>
+<li>
+<p>Can you make your name go to the end of the screen?</p>
+</li>
+</ul>
+<h2 id="final-project">Final Project</h2>
+<video controls >
+<source src="https://storage.googleapis.com/electroblocks/lessons/lcd_screen/lcd_screen_final_project.mp4">
+</video>
+
+<h2 id="website-for-the-code">Website for the code</h2>
+<p>To control it from the website be sure to close the electroblocks website.  After that go <a href="https://phptuts.github.io/CHM/2026/June/15/index.html">LCD site</a> and click on the connect button.  Then type a message and click send.  </p>
+<h2 id="complete-code">Complete Code</h2>
+<p><a href="../../assets/lcd_screen/lcd_lesson_move_challenge.xml">Starter Challenge Project</a></p>
+<p><a href="../../assets/lcd_screen/lcd_lesson_complete_project.xml">Final Project Code</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../blink/" class="btn btn-neutral float-left" title="Blink"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../highfive/" class="btn btn-neutral float-right" title="HighFive Machine">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../minigolf/" class="btn btn-neutral float-left" title="Mini Golf"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../howto/saveproject/" class="btn btn-neutral float-right" title="Save Project">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -186,10 +221,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../blink/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../minigolf/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../highfive/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../howto/saveproject/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

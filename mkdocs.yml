@@ -14,6 +14,7 @@ nav:
       - Motion Sensor RGB LED Light Strip: lessons/sonar-motion-sensor.md
       - Flappy Bird: lessons/flappybird.md
       - Mini Golf: lessons/minigolf.md
+      - LCD Screen: lessons/lcd_screens.md
   - How Tos:
       - Save Project: howto/saveproject.md
       - Open Project: howto/openproject.md

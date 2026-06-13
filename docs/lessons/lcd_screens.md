@@ -56,7 +56,7 @@ In this challenge you will make the "Hi" on the screen go back and forth.  Close
 
 ## Website for the code
 
-To control it from the website be sure to close the electroblocks website.  After that go [LCD site](https://phptuts.github.io/CHM/2026/June/15/index.html) and click on the connect button.  Then type a message and click send.  
+To control it from the website be sure to close the electroblocks website.  After that go <a href="https://phptuts.github.io/CHM/2026/June/15/index.html" target="_blank">LCD Website</a> and click on the connect button.  Then type a message and click send.  
 
 ## Complete Code
 

@@ -13,8 +13,8 @@ In this lesson you'll build an LED flashlight and control its brightness from a 
 - Arduino
 - Breadboard
 - LED
-- resistor
-- jumper wires
+- Resistor
+- Jumper wires
 
 ## LED Tip
 
@@ -44,7 +44,7 @@ A breadboard lets us connect parts without gluing them together.
 <source src="https://storage.googleapis.com/electroblocks/lessons/flashlight/flashlight_works.mp4">
 </video>
 
-If your LED lights up this worked!
+Upload this first to make sure your LED is wired correctly. If the LED turns on, your wiring works!
 
 ## Coding 
 
@@ -58,9 +58,11 @@ If your LED lights up this worked!
 <source src="https://storage.googleapis.com/electroblocks/lessons/flashlight/using_webpage.mp4">
 </video>
 
-1\. Disconnect from electroblocks or close the tab.
+1\.   Only one website can connect to the Arduino at a time. Close ElectroBlocks before opening the flashlight website.
 
-2\. Go here [FlashLight Website](https://phptuts.github.io/CHM/ElectroBlocks/Flashlight/index.html) and click the connect button.
+2\. Go here [FlashLight Website](https://phptuts.github.io/CHM/ElectroBlocks/Flashlight/index.html) and click the connect button.  
+
+3\. Move the slider. Low numbers make the LED dim. High numbers make the LED bright.
 
 ## Challenge ⭐
 

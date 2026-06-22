@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Flappy Bird - ElectroBlocks</title>
+    <title>Flashlight - ElectroBlocks</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Flappy Bird";
-        var mkdocs_page_input_path = "lessons/flappybird.md";
+        var mkdocs_page_name = "Flashlight";
+        var mkdocs_page_input_path = "lessons/flashlight.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -58,7 +58,25 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../blink/">Blink</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../flashlight/">Flashlight</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Flashlight</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-youll-need">What You'll Need</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#led-tip">LED Tip</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#breadboard-tip">Breadboard Tip</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-1-build-it">Step 1: Build It</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-code">Test Code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coding">Coding</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-the-site">Using the site</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#challenge">Challenge ⭐</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../sending-messages/">Sending Messages</a>
                   </li>
@@ -72,23 +90,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../sonar-motion-sensor/">Motion Sensor RGB LED Light Strip</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Flappy Bird</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#what-you-will-learn">What you will learn</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bill-of-materials">Bill of Materials</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#slides">Slides</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#build-steps">Build Steps</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#coding-demo">Coding Demo</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#flappy-bird-game-connection-demo">Flappy Bird Game Connection Demo</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#challenge-make-the-game-playable">Challenge (Make the game playable)</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../flappybird/">Flappy Bird</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../minigolf/">Mini Golf</a>
                   </li>
@@ -117,7 +119,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">ElectroBlocks Lessons</li>
-      <li class="breadcrumb-item active">Flappy Bird</li>
+      <li class="breadcrumb-item active">Flashlight</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -126,60 +128,62 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="flappy-bird">Flappy Bird</h1>
-<p>In this lesson you will build a flappy bird game controller with a Arduino and a touch sensor.</p>
+                <h1 id="build-a-remote-controlled-flashlight">Build a Remote-Controlled Flashlight 🔦</h1>
+<p>In this lesson you'll build an LED flashlight and control its brightness from a webpage.</p>
 <video controls >
-<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/FlappyBird.MOV">
+<source src="https://storage.googleapis.com/electroblocks/lessons/flashlight/live_demo.mp4">
 </video>
 
-<h2 id="what-you-will-learn">What you will learn</h2>
+<p><img alt="webpage" src="../../assets/flashlight/webpage.png" /></p>
+<h2 id="what-youll-need">What You'll Need</h2>
 <ul>
-<li>How to use a touch sensor</li>
-<li>How to send message to a computer from the Arduino</li>
-<li>How to use an if block</li>
+<li>Arduino</li>
+<li>Breadboard</li>
+<li>LED</li>
+<li>resistor</li>
+<li>jumper wires</li>
 </ul>
-<h2 id="bill-of-materials">Bill of Materials</h2>
-<p><img alt="kit" src="../../assets/flappybird/project.png" /></p>
+<h2 id="led-tip">LED Tip</h2>
+<p>LEDs only work in one direction.</p>
+<p>Long leg  = Positive (+)
+Short leg = Negative (-)</p>
+<p><img alt="led" src="../../assets/components/led.jpg" /></p>
+<h2 id="breadboard-tip">Breadboard Tip</h2>
+<p>A breadboard lets us connect parts without gluing them together.</p>
+<h2 id="step-1-build-it">Step 1: Build It</h2>
+<p><img alt="fullwire" src="../../assets/flashlight/flashlight-full-picture.png" /></p>
+<p><img alt="electroblocks" src="../../assets/flashlight/electroblocks_picture.png" /></p>
+<p><img alt="closeup" src="../../assets/flashlight/breadboard-closeup.png" /></p>
+<h2 id="test-code">Test Code</h2>
+<video controls >
+<source src="https://storage.googleapis.com/electroblocks/lessons/flashlight/flashlight_works.mp4">
+</video>
+
+<p>If your LED lights up this worked!</p>
+<h2 id="coding">Coding</h2>
+<video controls >
+<source src="https://storage.googleapis.com/electroblocks/lessons/flashlight/flightlight_complete.mp4">
+</video>
+
+<h2 id="using-the-site">Using the site</h2>
+<video controls >
+<source src="https://storage.googleapis.com/electroblocks/lessons/flashlight/using_webpage.mp4">
+</video>
+
+<p>1. Disconnect from electroblocks or close the tab.</p>
+<p>2. Go here <a href="https://phptuts.github.io/CHM/ElectroBlocks/Flashlight/index.html">FlashLight Website</a> and click the connect button.</p>
+<h2 id="challenge">Challenge ⭐</h2>
 <ul>
-<li>1 x <a href="../what-is-an-arduino/">Arduino with cable</a></li>
-<li>1 x <a href="../../addons#Touch-Sensor">Touch Sensor</a></li>
-<li>3 x wires</li>
+<li>Can you add a second LED?</li>
+<li>Can you write code to make a blinking light if you type the word "blink"</li>
+<li>Can you make your own light patterns.</li>
 </ul>
-<h2 id="slides"><a href="https://docs.google.com/presentation/d/1NajQaFKaowK2HvOcsfEApE3_9FElnhDUdM8chXerAbw/edit?usp=sharing">Slides</a></h2>
-<h2 id="build-steps">Build Steps</h2>
-<p>1. Connect a jumper wire from the SIG pin of the touch sensor to pin 7 of the Arduno.</p>
-<p><img alt="step 1" src="../../assets/flappybird/step1.png" /></p>
-<p>2. Connect a jumper wire from vcc of the touch sensor to the 3.3v pin of the Arduino</p>
-<p><img alt="step 2" src="../../assets/flappybird/step2.png" /></p>
-<p>3. Connect a jumper wire from gnd of the touch sensor to a gnd pin on the Arduino</p>
-<p><img alt="step 3" src="../../assets/flappybird/step3.png" /></p>
-<h2 id="coding-demo">Coding Demo</h2>
-<p>Flow the video to code and to upload the code.</p>
-<video controls >
-<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/demo_code.mov">
-</video>
-
-<h2 id="flappy-bird-game-connection-demo">Flappy Bird Game Connection Demo</h2>
-<video controls >
-<source src="https://storage.googleapis.com/noah-education-videos/electroblocks/flappybird/demo_game.mov">
-</video>
-
-<p><a href="https://codepen.io/noah-glaser/pen/xbwMObP">Game</a></p>
-<h2 id="challenge-make-the-game-playable">Challenge (Make the game playable)</h2>
-<p>Find this section of the code and play with the variables.</p>
-<pre><code class="language-js">    const G = 0.45;          // gravity
-    const JUMP_V = -3.8;     // jump velocity
-    const PIPE_GAP = 150;    // vertical gap size
-    const PIPE_W = 60;       // pipe width
-    const PIPE_SPACING = 220;// distance between pipes
-    const SCROLL = 2.4;      // world scroll speed
-</code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../sonar-motion-sensor/" class="btn btn-neutral float-left" title="Motion Sensor RGB LED Light Strip"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../minigolf/" class="btn btn-neutral float-right" title="Mini Golf">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../blink/" class="btn btn-neutral float-left" title="Blink"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sending-messages/" class="btn btn-neutral float-right" title="Sending Messages">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -202,10 +206,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../sonar-motion-sensor/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../blink/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../minigolf/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../sending-messages/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
